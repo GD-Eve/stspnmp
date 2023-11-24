@@ -1,7 +1,7 @@
-<div class=" bg-[#f5f5f5]">
+<div class=" bg-[#ebebeb]">
     <div class="lg:flex lg:justify-between lg:py-10">
         <div class="px-10 pt-5 lg:pt-10 space-y-4">
-            <div class="lg:flex lg:justify-center items-center lg:space-x-4 xl:space-x-10">
+            <div class="lg:flex lg:justify-center items-center lg:space-x-4 xl:space-x-10 space-y-2 lg:space-y-0">
                 <!--logo-->
                 <div class=" lg:flex lg:justify-between">
                     <div class="max-w-[170px]">
@@ -9,7 +9,7 @@
                     </div>
                 </div>
                 <!--content-->
-                <div class="text-base font-black space-y-4">
+                <div class="text-sm sm:text-base font-black space-y-4">
                     <div class="text-black/50 space-y-4">
                         <a href="tel:06-5050905" title="電話：06-5050905"
                             class="flex space-x-2 hover:text-yellow-400 hover:transition-all hover:duration-500 "
@@ -31,11 +31,10 @@
                             <p>74147台南市新市區南科三路10號</p>
                         </a>
                     </div>
-                    <div class="flex flex-col md:flex-row space-x-2 ">
+                    <div class="flex flex-col md:flex-row lg:space-x-2 space-y-1 lg:space-y-0">
                         <p>開館資訊:</p>
                         <div class="flex flex-col md:flex-row">
-                            <p>星期一休館 / 星期二至星期日</p>
-                            <p>09:00-17:00</p>
+                            <p>星期一休館 / 星期二至星期日09:00-17:00</p>
                         </div>
                     </div>
                 </div>

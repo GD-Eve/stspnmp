@@ -170,8 +170,8 @@
                                 <a href="" class=" ">
                                     <a class="relative inline-block group cursor-pointer">
                                         <div class="text-sm md:text-xl font-black  flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="50"
-                                                viewBox="0 -940 960 960" width="50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -940 960 960"
+                                                width="50">
                                                 <path d="M400-280v-400l200 200-200 200Z" />
                                             </svg>
                                             <div class="">更多特展資訊</div>
@@ -254,62 +254,102 @@
                             </a>
                         </div>
                         <!--728以上顯示-->
-                        <div class="hidden md:block min-h-screen space-y-5 lg:space-y-0">
+                        <!--將圖片分為兩個部分，並用寬設定比例才可以在rwd等比例縮放-->
+                        <div class="p-10">
+                            <div class="flex  space-x-5">
+                                <div class="relative w-[calc(640/1600)] ">
+                                    <div class="">
+                                        <img src="{{asset('assets/images/homefeature01.jpg')}}" alt=""
+                                            class=" aspect-square w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class=" w-[calc(680/1600)]">
+                                    <div class="flex justify-between space-x-5">
+                                        <div class="w-1/2 space-y-5 ">
+                                            <div class="relative overflow-hidden">
+                                                <div class="">
+                                                    <img src="{{asset('assets/images/homefeature02.jpg')}}" alt=""
+                                                        class=" aspect-[420/320] w-full h-full object-cover">
+                                                </div>
+                                            </div>
+                                            <div class="relative overflow-hidden">
+                                                <img src="{{asset('assets/images/homefeature03.jpg')}}" alt=""
+                                                    class=" aspect-[420/320] w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="w-1/2">
+                                            <div class="relative overflow-hidden">
+                                                <img src="{{asset('assets/images/homefeature04.jpg')}}" alt=""
+                                                    class=" aspect-[420/680] w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        {{-- <div class="hidden md:block min-h-screen space-y-5 lg:space-y-0">
                             <div class="relative">
                                 <div class="lg:absolute lg:top-0 lg:left-[5%] lg:w-[35%] 2xl:man-w-[600px]">
                                     <img class=" aspect-square w-full h-full object-cover "
                                         src="{{ asset('assets/images/homefeature01.jpg') }}" />
-                                        <div class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute bottom-0 right-0 bg-[#ffea00]">
-                                            <div
-                                                class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
-                                            </div>
+                                    <div
+                                        class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute bottom-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
+                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
+                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flex justify-between space-x-5 lg:space-x-0">
                                 <div class="flex flex-col justify-between space-y-5 lg:space-x-0 ">
+                                    <div
+                                        class="lg:absolute lg:top-0 lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
+                                        <img class=" aspect-[320/220] w-full h-full object-cover relative"
+                                            src="{{ asset('assets/images/homefeature02.jpg') }}" />
                                         <div
-                                            class="lg:absolute lg:top-0 lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
-                                            <img class=" aspect-[320/220] w-full h-full object-cover relative"
-                                                src="{{ asset('assets/images/homefeature02.jpg') }}" />
-                                                <div class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 left-0 bg-[#ffea00]">
-                                                    <div
-                                                        class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
-                                                        <p class="xl:text-4xl leading-8 tracking-widest font-bold">交通</p>
-                                                        <p class="xl:text-4xl leading-8 tracking-widest font-bold">指南</p>
-                                                    </div>
-                                                </div>
+                                            class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 left-0 bg-[#ffea00]">
+                                            <div
+                                                class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">交通</p>
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">指南</p>
+                                            </div>
                                         </div>
-                                    
+                                    </div>
+
                                     <div
                                         class="lg:absolute lg:top-[22.6%] xl:top-[32.5%] 2xl:top-[39.4%] lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
                                         <img class=" aspect-[320/220] w-full h-full object-cover relative"
                                             src="{{ asset('assets/images/homefeature02.jpg') }}" />
-                                            <div class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 right-0 bg-[#ffea00]">
-                                                <div
-                                                    class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
-                                                    <p class="xl:text-4xl leading-8 tracking-widest font-bold">票價</p>
-                                                    <p class="xl:text-4xl leading-8 tracking-widest font-bold">資訊</p>
-                                                </div>
+                                        <div
+                                            class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 right-0 bg-[#ffea00]">
+                                            <div
+                                                class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">票價</p>
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">資訊</p>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="lg:absolute lg:top-0 lg:right-[5%] lg:w-[23.4%] lg:xl:max-w-[580px]">
                                     <img class=" aspect-[320/480] w-full h-full object-cover relative"
                                         src="{{ asset('assets/images/homefeature04.jpg') }}" />
-                                        <div class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute top-0 right-0 bg-[#ffea00]">
-                                            <div
-                                                class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
-                                            </div>
+                                    <div
+                                        class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute top-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
+                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
+                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

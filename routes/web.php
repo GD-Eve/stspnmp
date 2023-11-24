@@ -3,8 +3,9 @@
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
-use App\Livewire\Frontend\Home\Index;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', Index::class)->name('home');
-Route::get('/about', App\Livewire\Frontend\About\Index::class)->name('about');
-Route::get('/about', App\Livewire\Frontend\About\Index::class)->name('about');
+Route::get('/', App\Livewire\Frontend\Home\Index::class)->name('home');
+Route::get('/introduction', App\Livewire\Frontend\About\Introduction\Index::class)->name('introduction');
 
 
 

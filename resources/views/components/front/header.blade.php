@@ -108,7 +108,7 @@
                                 <div class="divide-y">
                                     <!--about-->
                                     <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                        <a href="" class="inline-block relative group" title="認識我們">
+                                        <a href="/introduction" class="inline-block relative group" title="認識我們">
                                             <div>
                                                 <div class="relative text-lg  ">認識我們</div>
                                                 <div
