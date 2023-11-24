@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', Index::class)->name('home');
 Route::get('/about', App\Livewire\Frontend\About\Index::class)->name('about');
+Route::get('/about', App\Livewire\Frontend\About\Index::class)->name('about');
 
 
 

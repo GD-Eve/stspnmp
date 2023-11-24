@@ -1,27 +1,27 @@
 <div>
     <x-front.header />
-    <main class="pb-10 lg:pb-60">
+    <main class="pb-10 ">
         <div class="">
             <!--banner-->
-            <div class=" relative w-full overflow-hidden">
+            <div class=" relative w-full overflow-hidden ">
                 <div class="swiper bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="relative pt-[60%] lg:pt-[calc(100vh-95px)]">
                                 <img class="absolute top-0 left-0 w-full h-full object-cover "
-                                    src="{{asset('assets/images/banner01.jpg')}}" />
+                                    src="{{ asset('assets/images/banner01.jpg') }}" />
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="relative pt-[60%] lg:pt-[calc(100vh-95px)]">
                                 <img class="absolute top-0 left-0 w-full h-full object-cover"
-                                    src="{{asset('assets/images/banner02.jpg')}}" />
+                                    src="{{ asset('assets/images/banner02.jpg') }}" />
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="relative pt-[60%] lg:pt-[calc(100vh-95px)]">
                                 <img class="absolute top-0 left-0 w-full h-full object-cover"
-                                    src="{{asset('assets/images/banner03.jpg')}}" />
+                                    src="{{ asset('assets/images/banner03.jpg') }}" />
                             </div>
                         </div>
                     </div>
@@ -31,11 +31,11 @@
                 </div>
             </div>
             <!--openinfo-->
-            <div class="  ">
-                <div class="pt-5 md:pt-10 lg:px-10  w-full">
+            <div>
+                <div class="pt-5 md:pt-10 w-full">
                     <div class="lg:flex lg:justify-center lg:space-x-5 xl:space-x-10 space-y-4 md:space-y-0 ">
                         <div
-                            class="px-10 md:px-20 lg:px-0 md:flex md:justify-between md:space-x-5 xl:space-x-10 space-y-4 md:space-y-0 w-full lg:w-[65%] xl:max-w-[600px]">
+                            class="px-10 xl:px-0 md:flex md:justify-between md:space-x-5 xl:space-x-10 space-y-4 md:space-y-0 w-full lg:w-[50%] xl:max-w-[600px]">
                             <!--left-->
                             <div class="p-5  border-black border-[6px] md:aspect-square w-full">
                                 <div class="relative space-y-10  xl:space-y-20">
@@ -148,7 +148,7 @@
                         </div>
                         <!--text-->
                         <div class="pt-5 lg:pt-0 px-10 md:px-20 lg:px-0  lg:w-[45%] ">
-                            <div class="relative group ">
+                            <a href="/" class="relative group ">
                                 <div class="  py-1 md:py-5 border-t-[6px] border-b-[6px] border-black ">
                                     <div class=" space-y-1 md:space-y-2 text-center lg:text-left ">
                                         <div class=" ">
@@ -165,131 +165,152 @@
                                 <div
                                     class=" absolute bottom-0 left-0 -z-10 w-full h-full translate-x-0 translate-y-0   group-hover:transition-all group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:duration-500 group-hover:opacity-1 group-hover:bg-[#ffea00]">
                                 </div>
-                            </div>
+                            </a>
                             <div class="relative">
                                 <a href="" class=" ">
-                                    <a class="relative inline-block group">
+                                    <a class="relative inline-block group cursor-pointer">
                                         <div class="text-sm md:text-xl font-black  flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -940 960 960"
-                                                width="50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="50"
+                                                viewBox="0 -940 960 960" width="50">
                                                 <path d="M400-280v-400l200 200-200 200Z" />
                                             </svg>
                                             <div class="">更多特展資訊</div>
-                                            <div
+                                            {{-- <div
                                                 class="absolute w-0 h-[1px] bg-black bottom-0 left-0 translate-b-[150%] group-hover:w-full group-hover:transition-all">
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </a>
                                 </a>
-                                <div class="relative group">
-                                    <div class="p-2 border-black border-[6px] md:w-1/2 ">
-                                        <p class="text-sm md:text-xl font-black text-center">兒童廳預約</p>
+                                <a href="/">
+                                    <div class="relative group">
+                                        <div class="p-2 border-black border-[6px] md:w-1/2 ">
+                                            <p class="text-sm md:text-xl font-black text-center">兒童廳預約</p>
+                                        </div>
+                                        <div
+                                            class=" absolute bottom-0 left-0 -z-10 w-1/2 h-full translate-x-0 translate-y-0   group-hover:transition-all group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:duration-500 group-hover:opacity-1 group-hover:bg-[#ffea00]">
+                                        </div>
                                     </div>
-                                    <div
-                                        class=" absolute bottom-0 left-0 -z-10 w-1/2 h-full translate-x-0 translate-y-0   group-hover:transition-all group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:duration-500 group-hover:opacity-1 group-hover:bg-[#ffea00]">
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--service area-->
-                <div class=" lg:pt-40 lg:flex lg:justify-center ">
-                    <!--768以下隱藏-->
-                    <div class="md:hidden pt-5 px-10 space-y-4">
-                        <a href="/" class="block" title="展覽活動">
-                            <div class="relative">
-                                <img src="{{asset('assets/images/homefeature01.jpg')}}" alt="展覽活動"
-                                    class=" aspect-square w-full hfull object-cover">
-                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                    <div
-                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8  font-bold">
-                                        <p class="">展覽</p>
-                                        <p class="">活動</p>
+                <div class="pt-5 md:pt-10 lg:pt-24 md:px-20 lg:px-0 ">
+                    <div class="relative">
+                        <!--768以下隱藏-->
+                        <div class="md:hidden pt-5 px-10 space-y-4">
+                            <a href="/" class="block" title="展覽活動">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/images/homefeature01.jpg') }}" alt="展覽活動"
+                                        class=" aspect-square w-full hfull object-cover">
+                                    <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-2 flex flex-col justify-between text-center text-xl leading-8  font-bold">
+                                            <p class="">展覽</p>
+                                            <p class="">活動</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="/" class="block" title="交通指南">
-                            <div class="relative">
-                                <img src="{{asset('assets/images/homefeature02.jpg')}}" alt="交通指南"
-                                    class=" aspect-square w-full hfull object-cover">
-                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                    <div
-                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                        <p class="">交通</p>
-                                        <p class="">指南</p>
+                            </a>
+                            <a href="/" class="block" title="交通指南">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/images/homefeature02.jpg') }}" alt="交通指南"
+                                        class=" aspect-square w-full hfull object-cover">
+                                    <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                            <p class="">交通</p>
+                                            <p class="">指南</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="/" class="block" title="票價資訊">
-                            <div class="relative">
-                                <img src="{{asset('assets/images/homefeature03.jpg')}}" alt="票價資訊"
-                                    class=" aspect-square w-full hfull object-cover">
-                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                    <div
-                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                        <p class="">展覽</p>
-                                        <p class="">活動</p>
+                            </a>
+                            <a href="/" class="block" title="票價資訊">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/images/homefeature03.jpg') }}" alt="票價資訊"
+                                        class=" aspect-square w-full hfull object-cover">
+                                    <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                            <p class="">票價</p>
+                                            <p class="">資訊</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="/" class="block" title="導覽服務">
-                            <div class="relative">
-                                <img src="{{asset('assets/images/homefeature04.jpg')}}" alt="導覽服務"
-                                    class=" aspect-square w-full hfull object-cover">
-                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                    <div
-                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                        <p class="">展覽</p>
-                                        <p class="">活動</p>
+                            </a>
+                            <a href="/" class="block" title="導覽服務">
+                                <div class="relative">
+                                    <img src="{{ asset('assets/images/homefeature04.jpg') }}" alt="導覽服務"
+                                        class=" aspect-square w-full hfull object-cover">
+                                    <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                        <div
+                                            class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                            <p class="">導覽</p>
+                                            <p class="">服務</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!--728以上顯示-->
-                    <div
-                        class="hidden md:block  lg:max-w-[1000px] xl:max-w-[1620px] px-20 lg:px-10 xl:px-0 pt-5 lg:pt-0">
-                        <div class="relative">
-                            <div class="lg:flex space-y-5 lg:space-y-0  lg:space-x-5 ">
-                                <a class="lg:w-[420px] xl:w-[680px]" title="展覽活動">
-                                    <div class="relative ">
-                                        <img src="{{asset('assets/images/homefeature01.jpg')}}" alt="展覽活動"
-                                            class=" aspect-square w-full hfull object-cover">
-                                        <div class="w-[120px] h-[120px] absolute bottom-0 right-0 bg-[#ffea00]">
+                            </a>
+                        </div>
+                        <!--728以上顯示-->
+                        <div class="hidden md:block min-h-screen space-y-5 lg:space-y-0">
+                            <div class="relative">
+                                <div class="lg:absolute lg:top-0 lg:left-[5%] lg:w-[35%] 2xl:man-w-[600px]">
+                                    <img class=" aspect-square w-full h-full object-cover "
+                                        src="{{ asset('assets/images/homefeature01.jpg') }}" />
+                                        <div class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute bottom-0 right-0 bg-[#ffea00]">
                                             <div
-                                                class="p-8 flex flex-col justify-between text-center text-2xl leading-8  font-bold">
-                                                <p class="">展覽</p>
-                                                <p class="">活動</p>
+                                                class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                                <div
-                                    class="flex flex-1 h-full space-x-5 lg:min-h-[420px] xl:min-h-[680px] overflow-hidden">
-                                    <div class="flex flex-col justify-between space-y-5 lg:space-y-0">
-                                        <div class="lg:max-h-[220px] xl:max-h-[360px]">
-                                            <img src="{{asset('assets/images/homefeature02.jpg')}}" alt="交通指南"
-                                                class=" aspect-square lg:aspect-[320/220] w-full h-full object-cover">
-                                        </div>
-                                        <div class="lg:max-h-[220px] xl:max-h-[360px]">
-                                            <img src="{{asset('assets/images/homefeature03.jpg')}}" alt="票價資訊"
-                                                class=" aspect-square lg:aspect-[320/220] w-full h-full object-cover">
-                                        </div>
-                                    </div>
-                                    <div class="lg:h-full ">
-                                        <img src="{{asset('assets/images/homefeature04.jpg')}}" alt="導覽服務"
-                                            class=" aspect-square lg:aspect-[320/480] w-full h-full object-cover">
-                                    </div>
                                 </div>
                             </div>
+                            <div class="flex justify-between space-x-5 lg:space-x-0">
+                                <div class="flex flex-col justify-between space-y-5 lg:space-x-0 ">
+                                        <div
+                                            class="lg:absolute lg:top-0 lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
+                                            <img class=" aspect-[320/220] w-full h-full object-cover relative"
+                                                src="{{ asset('assets/images/homefeature02.jpg') }}" />
+                                                <div class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 left-0 bg-[#ffea00]">
+                                                    <div
+                                                        class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
+                                                        <p class="xl:text-4xl leading-8 tracking-widest font-bold">交通</p>
+                                                        <p class="xl:text-4xl leading-8 tracking-widest font-bold">指南</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    
+                                    <div
+                                        class="lg:absolute lg:top-[22.6%] xl:top-[32.5%] 2xl:top-[39.4%] lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
+                                        <img class=" aspect-[320/220] w-full h-full object-cover relative"
+                                            src="{{ asset('assets/images/homefeature02.jpg') }}" />
+                                            <div class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 right-0 bg-[#ffea00]">
+                                                <div
+                                                    class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
+                                                    <p class="xl:text-4xl leading-8 tracking-widest font-bold">票價</p>
+                                                    <p class="xl:text-4xl leading-8 tracking-widest font-bold">資訊</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
 
+                                <div class="lg:absolute lg:top-0 lg:right-[5%] lg:w-[23.4%] lg:xl:max-w-[580px]">
+                                    <img class=" aspect-[320/480] w-full h-full object-cover relative"
+                                        src="{{ asset('assets/images/homefeature04.jpg') }}" />
+                                        <div class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute top-0 right-0 bg-[#ffea00]">
+                                            <div
+                                                class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
+                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -300,7 +321,7 @@
         document.addEventListener('livewire:init', () => {
             // banner
             let bannerswiper = new Swiper(".bannerSwiper", {
-                slidesPerView:1,
+                slidesPerView: 1,
                 spaceBetween: 30,
                 effect: "fade",
                 navigation: {
@@ -312,28 +333,27 @@
                     clickable: true
                 },
                 autoplay: {
-                    delay:3000
+                    delay: 3000
                 },
-                loop:true
+                loop: true
             });
 
 
             let rightAnimation = gsap.utils.toArray('.rightanimation');
-            gsap.registerPlugin(ScrollTrigger) 
+            gsap.registerPlugin(ScrollTrigger)
             ScrollTrigger.batch(rightAnimation, {
                 onEnter: batch => gsap.to(batch, {
-                    opacity: 1, 
+                    opacity: 1,
                     stagger: 2,
-                    duration:2,
-                    x:10,
-                    y:20
+                    duration: 2,
+                    x: 10,
+                    y: 20
                 }),
-                markers:true,
-                start:"top 90%",
+                markers: true,
+                start: "top 90%",
             });
 
 
         })
-
     </script>
 </div>
