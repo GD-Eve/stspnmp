@@ -255,38 +255,40 @@
                         </div>
                         <!--728以上顯示-->
                         <!--將圖片分為兩個部分，並用寬設定比例才可以在rwd等比例縮放-->
-                        <div class="p-10">
-                            <div class="flex  space-x-5">
-                                <div class="relative w-[calc(640/1600)] ">
-                                    <div class="">
-                                        <img src="{{asset('assets/images/homefeature01.jpg')}}" alt=""
-                                            class=" aspect-square w-full h-full object-cover">
+                        <div class="px-5">
+                            <div class=" max-w-[1600px] mx-auto">
+                                <div class="flex space-x-5 xl:space-x-10">
+                                    <div class="relative w-[42.5%] ">
+                                        <div class="">
+                                            <img src="{{asset('assets/images/homefeature01.jpg')}}" alt=""
+                                                class=" w-full h-full object-cover absolute top-0 left-0">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class=" w-[calc(680/1600)]">
-                                    <div class="flex justify-between space-x-5">
-                                        <div class="w-1/2 space-y-5 ">
-                                            <div class="relative overflow-hidden">
-                                                <div class="">
-                                                    <img src="{{asset('assets/images/homefeature02.jpg')}}" alt=""
+                                    <div class=" w-[55%]">
+                                        <div class="flex justify-between space-x-5 xl:space-x-10">
+                                            <div class="w-1/2 space-y-5 flex flex-col justify-between xl:space-y-10 ">
+                                                <div class="relative overflow-hidden">
+                                                    <div class="">
+                                                        <img src="{{asset('assets/images/homefeature02.jpg')}}" alt=""
+                                                            class=" aspect-[420/320] w-full h-full object-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="relative overflow-hidden">
+                                                    <img src="{{asset('assets/images/homefeature03.jpg')}}" alt=""
                                                         class=" aspect-[420/320] w-full h-full object-cover">
                                                 </div>
                                             </div>
-                                            <div class="relative overflow-hidden">
-                                                <img src="{{asset('assets/images/homefeature03.jpg')}}" alt=""
-                                                    class=" aspect-[420/320] w-full h-full object-cover">
-                                            </div>
-                                        </div>
-                                        <div class="w-1/2">
-                                            <div class="relative overflow-hidden">
-                                                <img src="{{asset('assets/images/homefeature04.jpg')}}" alt=""
-                                                    class=" aspect-[420/680] w-full h-full object-cover">
+                                            <div class="w-1/2">
+                                                <div class="relative w-full h-full">
+                                                    <img src="{{asset('assets/images/homefeature04.jpg')}}" alt=""
+                                                        class=" absolute top-0 left-0 w-full h-full object-cover">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+    
+    
                                 </div>
-
-
                             </div>
                         </div>
 

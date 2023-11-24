@@ -3,7 +3,14 @@
     <main class="">
         <div class="flex">
             <!--sidebar-->
-            <div class="hidden lg:block lg:w-[25%] bg-[#f3f3f3] ">
+            <div class="hidden lg:block  lg:w-[25%] bg-[#f3f3f3] ">
+                <div class="pt-11 px-5">
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="24"><path d="M140.001-140.001v-679.998h679.998v679.998H140.001Z"/></svg>
+                        <p class="text-18">簡介</p>
+                    </div>
+                </div>
+               
     
     
             </div>
