@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', App\Livewire\Frontend\Home\Index::class)->name('home');
 Route::get('/introduction', App\Livewire\Frontend\About\Introduction\Index::class)->name('introduction');
+Route::get('/buildingStyle', App\Livewire\Frontend\About\BuildingStyle\Index::class)->name('buildingStyle');
+Route::get('/fare', App\Livewire\Frontend\Visit\Fare\Index::class)->name('fare');
 
 
 

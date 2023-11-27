@@ -10,7 +10,7 @@
                 <!--手機/平板menu-->
                 <div class="xl:hidden font-bold z-30">
                     <div class="px-1">
-                        <div class="flex space-x-2 text-md" x-data="{ open: false }">
+                        <div class="flex space-x-2 text-md" x-data="{ open: false }" x-cloak>
                             <!--menu bar-->
                             <!--search-->
                             <div class="relative">
@@ -247,7 +247,7 @@
                     <div class="flex justify-between space-x-10">
                         <div class="relative">
                             <div class=" group relative">
-                                <a href="" class="block relative  group">
+                                <a href="/introduction" class="block relative  group">
                                     <div class="relative z-10">認識我們</div>
                                     <div
                                         class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
@@ -259,12 +259,12 @@
                                 <div
                                     class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 group-hover:opacity-100 opacity-0 pointer-events-none group-hover:pointer-events-auto">
                                     <div class="pt-[5px]">
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/introduction" class="block px-1 py-1">
                                             <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                                 <p class="px-4 py-1">簡介</p>
                                             </div>
                                         </a>
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/buildingStyle" class="block px-1 py-1">
                                             <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                                 <p class="px-4 py-1">建築特色</p>
                                             </div>
