@@ -1,0 +1,130 @@
+<?php
+    include('back/common.php');
+
+    $id = _get('id');
+    $table = 'products';
+
+	if(empty($id)){
+		$sort = index_sort($table)['sorting'];
+		$sql        = "select * from `".$table."` where del = 0 and activity=1 order by $sort,id desc limit 0,1";
+		$sth        = $pdo->prepare($sql);
+		$sth->execute($pressarray);
+		$row  = $sth->fetch(PDO::FETCH_ASSOC);
+
+		$id = $row['id'];
+	}
+
+    $pressarray = array(':id' => $id);
+    $sql        = "select * from `".$table."` where id=:id and del = 0 ";
+    $sth        = $pdo->prepare($sql);
+    $sth->execute($pressarray);
+    $row  = $p = $sth->fetch(PDO::FETCH_ASSOC);
+    $upid       = $row['upid'];
+    $picture = SearchPics($p['id'],$table)['picture'];
+
+    if(empty($row['title']))
+        $title = $row['name'];
+    else
+        $title = $row['title'];
+
+    if(empty($row['description']))
+        $description = strip_tags(htmlspecialchars_decode($row['editor']));
+    else
+        $description = nl2br($row['description']);
+?>
+<!doctype html>
+<html>
+    <head>
+        <!-- 首頁title 前方必須加上關鍵字 -->
+        <title><?=$title?></title>
+        <!--此部分是OG-->
+        <meta name="description" content="<?=str_replace('<br />','',$description)?>" />
+        <meta property="og:title" content="<?=$title?>" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:image" content="<?=$protocol.$_SERVER['HTTP_HOST'].$picture?>" />
+        <meta property="og:url" content="<?=$protocol.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" />
+        <meta property="og:description" content="<?=str_replace("<br />",'',$description)?>" />
+        <!--此部分是OG-END-->
+        <?php include("meta.php"); ?>
+
+	</head>
+
+<body id="index">
+<!--header-->
+    <?php include("header.php"); ?>
+<!--header end-->
+<!-- 過場動畫 -->
+<!-- <div class="dt-loading-2">
+	<div class="laying-2">
+		<div class="loading-logo-box">
+
+		</div>
+	</div>
+</div> -->
+<main>
+<!--banner-->
+<div class="main-box">
+	<div class="index-banner-box">
+		<div class="header-phone">
+			凱擘大寬頻 黃敏琇 服務網站
+			<p>新申裝專線<a href="tel:0981196705">0981-196705</a></p>	
+			<div class="header-title"><b>全省</b>皆有服務,<span>找我裝最優惠</span><i class="fa fa-check" aria-hidden="true"></i></div>
+		</div>
+		<div class="index-banner">
+			<?php
+				/* 取出多傳圖片資料 Begin */
+				$pictures = array();
+				$pidarray = array(':upid'=>$id);
+				$sql = "select * from `".$table."_pics` where upid=:upid and del=0 order by sticky desc,sequence DESC,id asc";
+				$sth = $pdo->prepare($sql);
+				$sth->execute($pidarray);
+				$pics = $sth->fetchAll(PDO::FETCH_ASSOC);
+				foreach ($pics as $key => $value) {
+					$value['picture'] = SearchSingle($value['id'],'id',$table.'_pics')['picture'];
+					array_push($pictures, $value);
+				}
+				/* 取出多傳圖片資料 End */
+			?>
+			<?php foreach ($pictures as $key => $value) { ?>
+			<div class="index-banner-list">
+				<div class="index-banner-list-img">
+					<img src="<?=$value['picture']?>" alt="<?=$value['name']?>">
+				</div>
+			</div>
+			<?php } ?>
+
+		</div>
+		<div class="slick-arrows-box">
+			<div class="slick-prevArrow"></div>
+			<div class="slick-nextArrow"></div>
+		</div>
+	</div>
+	<div class="main-info-box">
+		<!-- <p><?=$p['name']?></p> -->
+		<h1 class="main-title">觀昇有線電視 - 光纖上網</h1>
+		<div class="main-line"></div>
+		<div class="main-edit">
+			
+			<?=htmlspecialchars_decode($p['editor'])?>
+		</div>
+
+	</div>
+</div>
+
+
+</main>
+<!--footer-->
+    <?php include("footer.php"); ?>
+<!--footer end-->
+
+<script>
+$(function(){
+	$('body').addClass('off');
+	setTimeout(function(){
+		$(".dt-loading-2").fadeOut(100);
+		$('body').removeClass('off');
+	},1000);
+})
+</script>
+</body>
+</html>

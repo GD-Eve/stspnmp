@@ -25,13 +25,13 @@
                             <p>傳真:</p>
                             <p>06-5050906</p>
                         </div>
-                        <a href="" class="flex space-x-2 hover:text-yellow-400 hover:transition-all hover:duration-500"
+                        <a href="" class="flex space-x-2  hover:text-yellow-400 hover:transition-all hover:duration-500"
                             target="_blank">
                             <p>地址:</p>
                             <p>74147台南市新市區南科三路10號</p>
                         </a>
                     </div>
-                    <div class="flex flex-col md:flex-row lg:space-x-2 space-y-1 lg:space-y-0">
+                    <div class="flex flex-col md:flex-row lg:space-x-2 space-y-1 md:space-y-0">
                         <p>開館資訊:</p>
                         <div class="flex flex-col md:flex-row">
                             <p>星期一休館 / 星期二至星期日09:00-17:00</p>

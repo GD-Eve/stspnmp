@@ -258,105 +258,57 @@
                         <div class="px-5">
                             <div class=" max-w-[1600px] mx-auto">
                                 <div class="flex space-x-5 xl:space-x-10">
-                                    <div class="relative w-[42.5%] ">
-                                        <div class="">
+                                    <a href="/" class="w-[45%] group block overflow-hidden opacityanimation opacity-0">
+                                        <div
+                                            class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
                                             <img src="{{asset('assets/images/homefeature01.jpg')}}" alt=""
-                                                class=" w-full h-full object-cover absolute top-0 left-0">
+                                                class=" absolute top-0 left-0 w-full h-full object-cover">
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class=" w-[55%]">
                                         <div class="flex justify-between space-x-5 xl:space-x-10">
                                             <div class="w-1/2 space-y-5 flex flex-col justify-between xl:space-y-10 ">
-                                                <div class="relative overflow-hidden">
-                                                    <div class="">
+                                                <a href="/" class=" overflow-hidden group block opacityanimation opacity-0">
+                                                    <div class="relative group-hover:scale-105 transition-all duration-500">
                                                         <img src="{{asset('assets/images/homefeature02.jpg')}}" alt=""
                                                             class=" aspect-[420/320] w-full h-full object-cover">
                                                     </div>
-                                                </div>
-                                                <div class="relative overflow-hidden">
-                                                    <img src="{{asset('assets/images/homefeature03.jpg')}}" alt=""
-                                                        class=" aspect-[420/320] w-full h-full object-cover">
-                                                </div>
+                                                </a>
+                                                <a href="/" class=" overflow-hidden group block opacityanimation opacity-0">
+                                                    <div class="relative group-hover:scale-105 transition-all duration-500">
+                                                        <img src="{{asset('assets/images/homefeature03.jpg')}}" alt=""
+                                                            class=" aspect-[420/320] w-full h-full object-cover">
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="w-1/2">
-                                                <div class="relative w-full h-full">
+                                            <a href="/" class="w-1/2 group block overflow-hidden opacityanimation opacity-0">
+                                                <div
+                                                    class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
                                                     <img src="{{asset('assets/images/homefeature04.jpg')}}" alt=""
                                                         class=" absolute top-0 left-0 w-full h-full object-cover">
                                                 </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-    
-    
+
+
                                 </div>
                             </div>
                         </div>
 
-                        {{-- <div class="hidden md:block min-h-screen space-y-5 lg:space-y-0">
-                            <div class="relative">
-                                <div class="lg:absolute lg:top-0 lg:left-[5%] lg:w-[35%] 2xl:man-w-[600px]">
-                                    <img class=" aspect-square w-full h-full object-cover "
-                                        src="{{ asset('assets/images/homefeature01.jpg') }}" />
-                                    <div
-                                        class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute bottom-0 right-0 bg-[#ffea00]">
-                                        <div
-                                            class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
-                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
-                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between space-x-5 lg:space-x-0">
-                                <div class="flex flex-col justify-between space-y-5 lg:space-x-0 ">
-                                    <div
-                                        class="lg:absolute lg:top-0 lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
-                                        <img class=" aspect-[320/220] w-full h-full object-cover relative"
-                                            src="{{ asset('assets/images/homefeature02.jpg') }}" />
-                                        <div
-                                            class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 left-0 bg-[#ffea00]">
-                                            <div
-                                                class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">交通</p>
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">指南</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        class="lg:absolute lg:top-[22.6%] xl:top-[32.5%] 2xl:top-[39.4%] lg:left-[44.5%] lg:w-[22%] lg:max-w-[320px] xl:max-w-[420px]">
-                                        <img class=" aspect-[320/220] w-full h-full object-cover relative"
-                                            src="{{ asset('assets/images/homefeature02.jpg') }}" />
-                                        <div
-                                            class="w-[80px] h-[80px] xl:w-[120px] xl:h-[120px] absolute top-0 right-0 bg-[#ffea00]">
-                                            <div
-                                                class="p-3 xl:p-4 flex flex-col justify-center text-center  xl:space-y-4 ">
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">票價</p>
-                                                <p class="xl:text-4xl leading-8 tracking-widest font-bold">資訊</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="lg:absolute lg:top-0 lg:right-[5%] lg:w-[23.4%] lg:xl:max-w-[580px]">
-                                    <img class=" aspect-[320/480] w-full h-full object-cover relative"
-                                        src="{{ asset('assets/images/homefeature04.jpg') }}" />
-                                    <div
-                                        class="w-[100px] h-[100px] xl:w-[150px] xl:h-[150px] absolute top-0 right-0 bg-[#ffea00]">
-                                        <div
-                                            class="p-4 xl:p-8 flex flex-col justify-center text-center space-y-2 xl:space-y-4 ">
-                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">展覽</p>
-                                            <p class="xl:text-4xl leading-8 tracking-widest font-bold">活動</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
         </div>
-
+        {{-- <a href="/newsshow" class=" space-y-7 group block">
+            <div class="rounded-lg lg:rounded-[30px] overflow-hidden opacityanimation opacity-0">
+                <div class="relative pt-[100%] group-hover:scale-105 transition-all duration-500">
+                    <img class="absolute top-0 left-0 w-full h-full object-cover"
+                        src="{{asset('https://zhuocheng.soilball-design.com/storage/news/20231103/mwjY0yGbnKVrGP88tmZSd9pLqg0VmEvhswKCv41Q.jpg')}}"
+                        alt="">
+                </div>
+            </div>
+        </a> --}}
     </main>
     <x-front.footer />
     <script>
@@ -380,8 +332,21 @@
                 loop: true
             });
 
-
+            let opacityAnimation = gsap.utils.toArray('.opacityanimation');
             let rightAnimation = gsap.utils.toArray('.rightanimation');
+            gsap.registerPlugin(ScrollTrigger)
+            ScrollTrigger.batch(opacityAnimation, {
+                onEnter: batch => gsap.to(batch, {
+                    opacity: 1,
+                    stagger: 0.5,
+                    duration: 0.7,
+                    x: 0,
+                    y: 0
+                }),
+                markers: true,
+                start: "top 90%",
+            });
+            
             gsap.registerPlugin(ScrollTrigger)
             ScrollTrigger.batch(rightAnimation, {
                 onEnter: batch => gsap.to(batch, {
