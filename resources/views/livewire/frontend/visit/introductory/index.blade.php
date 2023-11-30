@@ -39,22 +39,22 @@
                                         <div class="text-2xl md:text-3xl ">【個人語音導覽機租用】</div>
                                         <ul style="list-style-type:disc;" class="pl-10 ">
                                             <li>
-                                                <p class=" leading-">
+                                                <p class=" leading-8">
                                                     提供成人之華語版、英語版、日語版、臺灣台語版、臺灣客語版導覽內容，民眾可依個人興趣、參觀動線隨選即聽文物導覽解說。
                                                 </p>
                                             </li>
                                             <li>
-                                                <p class=" leading-">
+                                                <p class=" leading-8">
                                                     提供兒童之華語版、英語版、臺灣台語版、臺灣客語版導覽內容，民眾可依個人興趣、參觀動線隨選即聽文物導覽解說。
                                                 </p>
                                             </li>
                                             <li>
-                                                <p class=" leading-">
+                                                <p class=" leading-8">
                                                     租借地點：一樓大廳服務台。
                                                 </p>
                                             </li>
                                             <li>
-                                                <p class=" leading-">
+                                                <p class=" leading-8">
                                                     租借費用：NT.50/台。
                                                 </p>
                                             </li>
