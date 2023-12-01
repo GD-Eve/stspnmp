@@ -1,8 +1,8 @@
 <div>
     <x-front.header />
-    <main class=" min-h-screen">
+    <main class=" min-h-screen overflow-hidden">
         <div class="pt-5 md:pt-10 lg:pt-11 pb-10 lg:pb-60 space-y-5 lg:space-y-10">
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center rightanimation translate-x-20">
                 <div class="inline-block group relative">
                     <div class="text-2xl md:text-4xl font-black">導覽服務</div>
                     <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
@@ -22,7 +22,7 @@
                 <div class="flex flex-col justify-center items-center">
                     <div class="w-full h-full lg:w-[1200px] ">
                         <div class="p-2 h-[5%]  border border-black/10 ">
-                            <p class="text-xl lg:text-2xl  font-bold ">館區平面圖(引導用)</p>
+                            <p class="text-xl lg:text-2xl  font-bold  ">館區平面圖(引導用)</p>
                         </div>
                         <div class="flex-1 relative w-full overflow-hidden border border-black/10  ">
                             <div class="p-10">
@@ -300,3 +300,32 @@
     </main>
     <x-front.footer />
 </div>
+    <script>
+        document.addEventListener('livewire:init', () => {
+                    let opacitytAnimation = gsap.utils.toArray('.opacityanimation');
+                    let rightAnimation = gsap.utils.toArray('.rightanimation');
+                    gsap.registerPlugin(ScrollTrigger) 
+                    ScrollTrigger.batch(opacitytAnimation, {
+                        onEnter: batch => gsap.to(batch, {
+                            opacity: 1, 
+                            stagger: 0.7,
+                            duration:1,
+                            y:0
+                        }),
+                        markers:true,
+                        start:"top 90%",
+                    });
+                   
+                    ScrollTrigger.batch(rightAnimation, {
+                        onEnter: batch => gsap.to(batch, {
+                            opacity: 1, 
+                            stagger: 0.5,
+                            duration:0.7,
+                            x:0,
+                        }),
+                        markers:true,
+                        start:"top 90%",
+                    });
+                })
+            
+    </script>
