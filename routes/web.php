@@ -29,6 +29,7 @@ Route::get('/instructions', App\Livewire\Frontend\Visit\Instructions\Index::clas
 Route::get('/traffic', App\Livewire\Frontend\Visit\Traffic\Index::class)->name('traffic');
 Route::get('/vend', App\Livewire\Frontend\Visit\Vend\Index::class)->name('vend');
 Route::get('/permanent', App\Livewire\Frontend\Exhibition\Permanent\Index::class)->name('permanent');
+Route::get('/special', App\Livewire\Frontend\Exhibition\Special\Index::class)->name('special');
 
 
 

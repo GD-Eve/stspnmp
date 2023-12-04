@@ -1,7 +1,7 @@
 <div>
     <x-front.header />
-    <main class="relative min-h-screen overflow-x-hidden">
-        <div class=" px-8 md:px-20 lg:px-0 lg:flex">
+    <main class="relative min-h-screen overflow-hidden">
+        <div class="lg:flex">
             <!--sidebar-->
             <div
                 class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
@@ -147,52 +147,31 @@
                 </div>
             </div>
             <!--content-->
-            <div class="lg:flex-1 pt-10 lg:px-20 xl:px-60 pb-10 lg:pb-60 ">
-                <div class="min-h-screen rightanimation opacity-0 translate-x-28 space-y-5 lg:space-y-0">
-                    <div class="relative flex justify-between ">
-                        <div class="lg:pb-7">
-                            <div class="inline-block group relative">
-                                <div class="text-2xl md:text-4xl font-black">第一展廳</div>
-                                <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
-                                </div>
-                            </div>
-                        </div>
-                        <!--lg以下icon-->
-                        <div class="flex space-x-7 md:space-x-10  justify-between items-center lg:hidden">
-                            <div class="w-[31%]  md:max-w-[43px] h-fit">
-                                <img src="https://stsp.nmp.gov.tw/img/front/about-icon-1.png" alt=""
-                                    class=" aspect-square w-full h-full object-contain">
-                            </div>
-                            <div
-                                class="w-[31%] h-full md:w-[43px] md:h-[43px] flex justify-center rounded-full  bg-black/20">
-                                <div class="max-w-[25px] ">
-                                    <img src="https://stsp.nmp.gov.tw/img/front/about-icon-3.png" alt=""
-                                        class=" aspect-square w-full h-full object-contain">
-                                </div>
+            <div class="lg:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28">
+                <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-10">
+                    <div class="lg:pb-7">
+                        <div class="inline-block group relative">
+                            <div class="text-2xl md:text-4xl font-black">當期特展</div>
+                            <div class=" absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
                     </div>
-                    <!--pic-->
-                    <div>
-                        <div class="max-w-[1200px] z-30">
-                            <img src="{{asset('assets/images/exhibition01.jpg')}}" alt="" class=" aspect-[2/1]">
-                        </div>
-                        {{-- <div class="absolute top-[200px] left-0 xl:w-[1200px] xk:h-[600px] bg-[#ffea00] -z-10"></div> --}}
-                    </div>
-                    <!--text-->
-                    <div class="lg:pt-40  flex flex-col justify-center items-center">
-                        <div class="max-w-screen-md">
-                            <div class="text-base lg:text-lg text-[#666666] tracking-widest leading-loose">
-                                <p>南科考古館為臺灣首座位於科學園區中之考古專業博物館，作為參觀南科館展示內容的第一站，呈現的是南科地區自新石器時代以來5,000年歷史淵源以及南科遺址群在臺灣考古研究中的重要性與獨特性。
-                                </p>
-                                <p>展廳中依照時間序列展出兩百多件南科地區6大考古文化11個子期相的代表性珍貴古物，如薄如紙張的貝刀、光可鑑人的巴圖形石斧、模樣質樸有趣的人面陶偶、雕工精緻的鹿角刀柄與骨骰等。
-                                </p>
-                                <p>搭配展廳入口的大型投影動畫以及各文化的生活場景模型，讓史前文化不再只是書本與媒體上的文句，而是可近距離觀看、感受的對象。</p>
-                                <p>此外，每一次的遺址搶救發掘都涉及南科地區的地貌變化，也是許多機關與工作人員費盡心力、揮汗如雨的成果，這20餘年來數十次的考古工作過程縮影亦將於展廳一隅呈現。</p>
+                    <div class=" flex lg:p-7">
+                        <div class="w-[30%]"></div>
+                        <div class="flex-1">
+                            <div class="text-sm">
+                                <p>特展時間：</p>
+                                <p>2023.06.20 ~ 2024.01.01</p>
+                            </div>
+                            <div class="">
+                                <p class="text-lg">與土地共舞-自然與人共譜的臺南特展</p>
+                                <p class="text-base">本展覽以臺南為視角，藉由繪圖再現臺南自一萬八千年以來的自然與人文景觀。嘗試從環境變遷探討人與環境交互影響的議題，並搭配遺址出土文物、科學證據輔助，讓大眾一同思考永續共存之道，延伸至對未來的期許與反思。</p>
                             </div>
                         </div>
                     </div>
+                   
                 </div>
+                
             </div>
             <!--lg以上icon-->
             <div class="hidden lg:block opacityanimation opacity-0 ">
