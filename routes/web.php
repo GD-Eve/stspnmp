@@ -27,6 +27,8 @@ Route::get('/introductory', App\Livewire\Frontend\Visit\Introductory\Index::clas
 Route::get('/districtplan', App\Livewire\Frontend\Visit\Districtplan\Index::class)->name('districtplan');
 Route::get('/instructions', App\Livewire\Frontend\Visit\Instructions\Index::class)->name('instructions');
 Route::get('/traffic', App\Livewire\Frontend\Visit\Traffic\Index::class)->name('traffic');
+Route::get('/vend', App\Livewire\Frontend\Visit\Vend\Index::class)->name('vend');
+Route::get('/permanent', App\Livewire\Frontend\Exhibition\Permanent\Index::class)->name('permanent');
 
 
 

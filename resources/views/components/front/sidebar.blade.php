@@ -1,4 +1,4 @@
-<div class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation -translate-x-28">
+<div class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
     <a href="/introduction" title="簡介" class="block relative">
         <div class=" pt-11 px-8">
             <div class="flex items-center space-x-2 relative z-30">
