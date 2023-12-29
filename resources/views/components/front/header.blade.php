@@ -1,5 +1,5 @@
-<header class="px-3 lg:px-5 py-[5px] lg:py-[11px] bg-white z-30 shadow-lg overflow-x-hidden">
-    <div class="sticky top-0 left-0 text-base ">
+<header class="sticky top-0 left-0 text-base bg-white z-30 shadow-lg">
+    <div class="px-3 lg:px-5 py-[5px] lg:py-[11px]">
         <div class="flex justify-between items-center lg:items-end text-[#666] text-base ">
             <!--left-->
             <a href="/" title="國立台灣史前文化博物館南科考古館" class="block">
@@ -60,7 +60,7 @@
                                 <div class="space-y-3 text-base ">
                                     <!--icon-->
                                     <div class="flex items-center space-x-4">
-                                        <a href="" target="_blank" class="block">
+                                        <a href="/" target="_blank" class="block">
                                             <img src="https://stsp.nmp.gov.tw/img/front/youtube_icon.png" alt="Youtube"
                                                 class=" aspect-square  h-full w-full object-cover">
                                         </a>
@@ -117,13 +117,13 @@
                                         </div>
                                     </a>
                                     <div class="px-5 text-black/80 space-y-4">
-                                        <a href="" class=" block" title="簡介">簡介</a>
-                                        <a href="" class=" block" title="建築特色">建築特色</a>
+                                        <a href="introduction" class=" block" title="簡介">簡介</a>
+                                        <a href="buildingStyle" class=" block" title="建築特色">建築特色</a>
                                     </div>
                                 </div>
                                 <!--visit-->
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="參觀資訊">
+                                    <a href="/fare" class="inline-block relative group" title="參觀資訊">
                                         <div>
                                             <div class="relative text-lg">參觀資訊</div>
                                             <div
@@ -132,18 +132,19 @@
                                         </div>
                                     </a>
                                     <div class="px-5 text-black/80 space-y-4">
-                                        <a href="" class=" block" title="票價資訊">票價資訊</a>
-                                        <a href="" class=" block" title="導覽服務">導覽服務</a>
-                                        <a href="" class=" block" title="兒童廳預約">兒童廳預約</a>
-                                        <a href="" class=" block" title="管區平面圖">管區平面圖</a>
-                                        <a href="" class=" block" title="參觀須知">參觀須知</a>
-                                        <a href="" class=" block" title="交通指南">交通指南</a>
-                                        <a href="" class=" block" title="博物館賣店與餐飲">博物館賣店與餐飲</a>
+                                        <a href="/fare" class=" block" title="票價資訊">票價資訊</a>
+                                        <a href="/introductory" class=" block" title="導覽服務">導覽服務</a>
+                                        <a href="https://event.culture.tw/NMP/portal/Tour/J5401MAction?changePage=0&TourType=004"
+                                            class=" block" title="兒童廳預約">兒童廳預約</a>
+                                        <a href="/districtplan" class=" block" title="管區平面圖">管區平面圖</a>
+                                        <a href="/instructions" class=" block" title="參觀須知">參觀須知</a>
+                                        <a href="/traffic" class=" block" title="交通指南">交通指南</a>
+                                        <a href="/vend" class=" block" title="博物館賣店與餐飲">博物館賣店與餐飲</a>
                                     </div>
                                 </div>
                                 <!--event-->
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="展覽活動">
+                                    <a href="/permanent" class="inline-block relative group" title="展覽活動">
                                         <div>
                                             <div class="relative text-lg ">展覽活動</div>
                                             <div
@@ -162,7 +163,7 @@
                                         </div>
                                     </div>
                                     <div class="px-5 space-y-4 ">
-                                        <a href="" class="block text-black/80" title="特展">特展</a>
+                                        <a href="/special" class="block text-black/80" title="特展">特展</a>
                                         <div class="px-5 space-y-4 text-base text-black/60">
                                             <a href="" class="block" title="當期特展">當期特展</a>
                                             <a href="" class="block" title="歷屆特展">歷屆特展</a>
@@ -170,7 +171,7 @@
                                         </div>
                                     </div>
                                     <div class="px-5 space-y-4 ">
-                                        <a href="" class="block text-black/80" title="藝術共賞">藝術共賞</a>
+                                        <a href="/device" class="block text-black/80" title="藝術共賞">藝術共賞</a>
                                         <div class="px-5 space-y-4 text-base text-black/60">
                                             <a href="" class="block" title="裝置藝術">裝置藝術</a>
                                             <a href="" class="block" title="歷屆特展">公共藝術</a>
@@ -245,26 +246,24 @@
             <div class="hidden xl:block">
                 <!--mid-->
                 <div class="flex justify-between space-x-10">
+
                     <div class="relative">
-                        <div class=" group relative">
-                            <a href="/introduction" class="block relative  group">
+                        <div class="group relative">
+                            <a href="/about/building-style" class="block relative  group">
                                 <div class="relative z-10">認識我們</div>
                                 <div
                                     class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
                                 </div>
                             </a>
                             <div
-                                class="group-hover:border-[#ffea00] group-hover:transition-all group-hover:duration-500 group-hover:block pointer-events-none group-hover:pointer-events-auto">
-                            </div>
-                            <div
-                                class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 group-hover:opacity-100 opacity-0 pointer-events-none group-hover:pointer-events-auto">
+                                class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
                                 <div class="pt-[5px]">
-                                    <a href="/introduction" class="block px-1 py-1">
+                                    <a href="" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">簡介</p>
                                         </div>
                                     </a>
-                                    <a href="/buildingStyle" class="block px-1 py-1">
+                                    <a href="" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">建築特色</p>
                                         </div>
