@@ -32,6 +32,7 @@ Route::get('/permanent', App\Livewire\Frontend\Exhibition\Permanent\Index::class
 Route::get('/special', App\Livewire\Frontend\Exhibition\Special\Index::class)->name('special');
 Route::get('/device', App\Livewire\Frontend\Exhibition\Device\Index::class)->name('device');
 Route::get('/qa', App\Livewire\Frontend\PublicService\Qa\Index::class)->name('qa');
+Route::get('/Lost_found', App\Livewire\Frontend\PublicService\LostFound\Index::class)->name('Lost_found');
 
 
 
