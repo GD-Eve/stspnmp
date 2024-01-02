@@ -1,7 +1,7 @@
 <div>
     <x-front.header />
-    <main class="relative min-h-screen overflow-hidden pb-10 lg:pb-60">
-        <div class="lg:flex text-md lg:text-lg text-[#666]">
+    <main class="relative min-h-screen overflow-hidden text-md lg:text-lg">
+        <div class="lg:flex">
             <!--sidebar-->
             <section
                 class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
@@ -151,78 +151,89 @@
             </section>
             <!--content-->
             <div class="px-5 md:px-20 xl:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
-                <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-10">
+                <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-12">
                     <div class="pb-7">
                         <div class="inline-block group relative">
-                            <div class="text-2xl md:text-4xl font-bold text-black relative z-10">志工制度</div>
+                            <div class="text-2xl md:text-4xl font-bold relative z-10">實習申請</div>
                             <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
                     </div>
-                    <section>
-                        <div class="lg:flex lg:space-x-2 lg:items-center border-b border-black/10">
-                            <a href="/" class="block relative group">
-                                <p class="p-2">管理要點</p>
-                                <div
-                                    class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0 group-hover:w-full group-hover:transition-all group-hover:duration-500">
-                                </div>
-                            </a>
-
-                            <a href="/" class="block relative group">
-                                <p class="p-2">考核要點</p>
-                                <div
-                                    class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0 group-hover:w-full group-hover:transition-all group-hover:duration-500">
-                                </div>
-                            </a>
-                            <a href="/" class="block relative group">
-                                <p class="p-2">組織要點</p>
-                                <div
-                                    class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0 group-hover:w-full group-hover:transition-all group-hover:duration-500">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="pt-10 leading-9 tracking-widest text-base">
-                            <p class="font-bold ">
-                                【中華民國 110 年 1 月 7 日臺史前館教字第 1103000048 號函發布】
+                    <section class=" leading-9 lg:space-y-12">
+                        <div class="space-y-6 text-[#666]">
+                            <p>本館為提供大專院校人類學、考古學、地質學、古生物學、生物學、博物館學、文物保存、藝術管理、圖書資訊、美術、藝術史、展示與教育、文化事業發展、休閒事業與餐飲服務等相關科系，或對博物館工作具有興趣的研究所或大專院校在學生博物館實習工作機會。
                             </p>
-                            <div>
-                                <p> 一、為促進志工團隊之健全發展並有效推展志願服務工作之管理，特依據志願服務法訂定本要點。</p>
-                                <p> 二、志工團隊之招募及訓練</p>
-                                <p>(一) 招募時間：依志工業務需求，不定期辦理招募。</p>
-                                <p>(二) 志工資格：18 歲以上，具主動積極奉獻熱忱及學習動機，有志投入博物館服務，服務期間至少可達 1 年以上者。</p>
-                                <p>(三) 招募報名：採線上填表、臨櫃報名或電子郵件、紙本郵寄等方式。(四) 甄試項目：得包含書面審查、面談、筆試及口試等方式。</p>
-                                <p>(五) 培訓課程：</p>
-                                <p>１、基礎訓練：已持有志願服務記錄冊者，免參加基礎訓練。未持有記錄冊者，請自行參加各機關單位辦理之志工基礎訓練實體課程，或參加臺北 e
-                                    大網開設之志工基礎訓練線上學習課程，完訓後取得志工基礎訓練學習證明。</p>
-                                <p>２、特殊訓練：認識本館組織及沿革、展示廳內容、志工值勤服務內容及規範說明等課程。</p>
-                                <p>(六) 實習及考核：完成特殊訓練課程後進行實習試用，於期間內完成規定實習時數始具備考核資格。考核方式得包含參與課程出席率、實習表現、筆試及口試等。</p>
-                                <p>(七) 志工聘用：通過考核並完成志願服務基礎訓練領有志願服務紀錄冊者，正式聘為本館志工。</p>
-                                <p>(八) 在職訓練：各組室依業務需要得辦理各類志工學習成長或專業領域相關課程，以充實志工之知能及專業素養。</p>
-                                <p>三、志工團隊值勤管理(一) 值勤守則</p>
-                                <p>１、遵守本館志工團隊之相關規定。</p>
-                                <p>２、執行志工團隊分配之服務工作時恪遵工作規定。</p>
-                                <p>３、志工值勤時應配戴志工證、著制服，保持親切服務態度及服裝儀容整潔。</p>
-                                <p>４、值勤須知：由各組室依實際需求訂定，如值勤時段、排班方式、服務內容及服勤注意事項等，並送交館方備查。</p>
-                                <p>(二) 請假、暫停職務及離隊、回任申請</p>
-                                <p>１、志工因故請假應事先報備並辦理書面申請手續：</p>
-                                <p>（１）短期請假(3 個月以下)：辦理短期請假申請，不減免年度值勤時數，惟年度值勤仍需達續聘資格 60
-                                    小時規定。但重大傷病、喪假及產假，經書面申請核准後，得扣除請假期間之值勤要求時數。年度短期請假累計不得逾 6 個月。</p>
-                                <p>（２）長期請假(6 個月以上未滿 1 年)：辦理暫停職務申請，續聘年資不予以計算。</p>
-                                <p>（３）長期請假(1 年以上者)：辦理離隊申請，並繳回識別證等相關物件。</p>
-                                <p>２、暫停職務及離隊後如欲回任，需提出回任申請，經同意後方可復職；離隊逾 1
-                                    年以上者，經同意後須參加教育訓練並通過考核後，方可復職。復職之教育訓練及考核方式由各組室依實際需求訂定並送交館方備查。</p>
-                                <p>(三) 轉調及跨／轉組申請</p>
-                                <p>本館為強化人力支援或志工基於個人興趣及自我成長，得申請轉調及跨／轉組服務(附件 5)：</p>
-                                <p>１、申請時間：各業務單位得視需求不定期招募。</p>
-                                <p>２、申請資格：現任志工皆可申請。</p>
-                                <p>３、甄用流程：如辦理面談、專業訓練、實習及考核等事項，由各組室依實際需求訂定並送交館方備查。</p>
-                                <p>４、同組室之轉調：服務轉解說，需參與專業訓練、實習及考核等事項；解說轉服務，需通過書面審查及面談。</p>
-                                <p>５、跨組值勤時數計算：於原組室每年值勤 60 小時，每跨一組室時數增加 30 小時，跨組室不限組室數量。年度值勤時數若未達規定者，取消跨組服務資格。</p>
-                                <p>６、跨/轉組服務之志工，請遵守各組室之值勤規定。</p>
-                                <p>７、本館跨/轉組室服務相關事宜，由志工業務承辦單位負責聯繫協調。</p>
-                                <p>(四) 依本館志工考核及獎勵要點，館方得補助志工值勤交通費或誤餐等經費。以上應視本館經費衡酌請領上限，每人每月請領次數上限以４次為限，跨組室志工得請領其二分之一。</p>
+                            <p>實習期間配合每年大專院校寒、暑假期間，期間以月為單位計算，特殊需求者可另議；實習時數配合學校實習規定辦理，且不得低於本館規定之最低實習時數，若無規定則依本館規定。</p>
+                            <p>申請程序詳見「學生實習申請作業要點」，相關資料請於下方自行下載。</p>
+                            <p>申請期限：寒假實習於每年12月15日之前，暑假實習於每年5月15日之前接受申請，逾期不受理。</p>
+                        </div>
+                        <div class="font-bold">
+                            <div class="py-4 border-b-4 border-black w-full">
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-4 h-4 bg-[#ffea00] rotate-12"></div>
+                                    <p class="text-xl md:text-2xl  ">附件下載</p>
+                                </div>
                             </div>
-
+                            <div class="py-4 border-b-2 border-dashed border-black w-full">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <p>01.</p>
+                                        <p>本館學生實習申請要點1071226修正</p>
+                                    </div>
+                                    <div class="w-[45px]">
+                                        <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 border-b-2 border-dashed border-black w-full">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <p>02.</p>
+                                        <p>史前館實習工作說明表</p>
+                                    </div>
+                                    <div class="w-[45px]">
+                                        <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 border-b-2 border-dashed border-black w-full">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <p>03.</p>
+                                        <p>附件一-本館實習申請表</p>
+                                    </div>
+                                    <div class="w-[45px]">
+                                        <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 border-b-2 border-dashed border-black w-full">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <p>04.</p>
+                                        <p>附件二-本館實習履歷表</p>
+                                    </div>
+                                    <div class="w-[45px]">
+                                        <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 border-b-2 border-dashed border-black w-full">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex">
+                                        <p>05.</p>
+                                        <p>附件三-本館實習構想書</p>
+                                    </div>
+                                    <div class="w-[45px]">
+                                        <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
+                                            class="w-full h-full object-contain">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </section>

@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <!--下拉選單-->
-                <div class="menu fixed top-0 left-0 w-full h-screen opacity-0 pointer-events-none ">
+                <nav class="menu fixed top-0 left-0 w-full h-screen opacity-0 pointer-events-none ">
                     <div class=" absolute top-0 left-0 bg-black/50 w-full h-full"></div>
                     <div class="flex justify-end w-full h-full relative z-10">
                         <div class="menuwhite w-4/5 bg-white h-full  translate-x-[100%] overflow-y-auto">
@@ -110,7 +110,7 @@
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
                                     <a href="/introduction" class="inline-block relative group" title="認識我們">
                                         <div>
-                                            <div class="relative text-lg  ">認識我們</div>
+                                            <div class="relative text-lg">認識我們</div>
                                             <div
                                                 class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0 -translate-y-[110%] group-hover:w-full group-hover:transition-all">
                                             </div>
@@ -181,7 +181,7 @@
                                 </div>
                                 <!--service-->
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="便民服務">
+                                    <a href="/qa" class="inline-block relative group" title="便民服務">
                                         <div>
                                             <div class="relative text-lg">便民服務</div>
                                             <div
@@ -190,16 +190,16 @@
                                         </div>
                                     </a>
                                     <div class="px-5 text-black/80 space-y-4">
-                                        <a href="" class=" block" title="常見問題">常見問題</a>
-                                        <a href="" class=" block" title="失物招領">失物招領</a>
-                                        <a href="" class=" block" title="志工制度">志工制度</a>
-                                        <a href="" class=" block" title="實習申請">實習申請</a>
-                                        <a href="" class=" block" title="場地租借">場地租借</a>
-                                        <a href="" class=" block" title="攝影申請">攝影申請</a>
+                                        <a href="/qa" class=" block" title="常見問題">常見問題</a>
+                                        <a href="/lost_found" class=" block" title="失物招領">失物招領</a>
+                                        <a href="/volunteer" class=" block" title="志工制度">志工制度</a>
+                                        <a href="/internship" class=" block" title="實習申請">實習申請</a>
+                                        <a href="/Application" class=" block" title="場地租借">場地租借</a>
+                                        <a href="/venueRental" class=" block" title="攝影申請">攝影申請</a>
                                     </div>
                                 </div>
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="最新消息">
+                                    <a href="/news" class="inline-block relative group" title="最新消息">
                                         <div>
                                             <div class="relative text-lg">最新消息</div>
                                             <div
@@ -209,7 +209,7 @@
                                     </a>
                                 </div>
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="線上展覽">
+                                    <a href="/surrounding" class="inline-block relative group" title="線上展覽">
                                         <div>
                                             <div class="relative text-lg">線上展覽</div>
                                             <div
@@ -241,15 +241,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="hidden xl:block">
                 <!--mid-->
                 <div class="flex justify-between space-x-10">
-
                     <div class="relative">
                         <div class="group relative">
-                            <a href="/about/building-style" class="block relative  group">
+                            <a href="/buildingStyle" class="block relative  group">
                                 <div class="relative z-10">認識我們</div>
                                 <div
                                     class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
@@ -258,13 +257,13 @@
                             <div
                                 class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
                                 <div class="pt-[5px]">
-                                    <a href="" class="block px-1 py-1">
-                                        <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
+                                    <a href="/introduction" class="block px-1 py-1">
+                                        <div class="hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">簡介</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
-                                        <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
+                                    <a href="/buildingStyle" class="block px-1 py-1">
+                                        <div class="hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">建築特色</p>
                                         </div>
                                     </a>
@@ -274,7 +273,7 @@
                     </div>
                     <div class="relative">
                         <div class="group relative">
-                            <a href="" class="block relative  group">
+                            <a href="/fare" class="block relative  group">
                                 <div class="relative z-10">參觀資訊</div>
                                 <div
                                     class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
@@ -283,37 +282,37 @@
                             <div
                                 class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
                                 <div class="pt-[5px]">
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/fare" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">票價資訊</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/introductory" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">導覽服務</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">兒童廳預約</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/districtplan" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">管區平面圖</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/instructions" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">參觀須知</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/traffic" class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">交通指南</p>
                                         </div>
                                     </a>
-                                    <a href="" class="block px-1 py-1">
+                                    <a href="/vend" class="block px-1 py-1">
                                         <div class=" hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">博物館賣店與餐飲</p>
                                         </div>
@@ -324,7 +323,7 @@
                     </div>
                     <div class="relative ">
                         <div class="group relative">
-                            <a href="" class="block relative  group">
+                            <a href="/permanent" class="block relative  group">
                                 <div class="relative z-10">展覽活動</div>
                                 <div
                                     class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
@@ -398,7 +397,7 @@
                                         </div>
                                     </div>
                                     <div class="menulistshow h-0 overflow-hidden">
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/special" class="block px-1 py-1">
                                             <p
                                                 class="inline-block px-4 py-1 after:border-b after:w-0 after:hover:w-full after:hover:border-black after:transition-all after:block">
                                                 當期特展
@@ -429,13 +428,13 @@
                                         </div>
                                     </div>
                                     <div class="menulistshow h-0 overflow-hidden">
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/device" class="block px-1 py-1">
                                             <p
                                                 class="inline-block px-4 py-1 after:border-b after:w-0 after:hover:w-full after:hover:border-black after:transition-all after:block">
                                                 裝置藝術
                                             </p>
                                         </a>
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/device" class="block px-1 py-1">
                                             <p
                                                 class="inline-block px-4 py-1 after:border-b after:w-0 after:hover:w-full after:hover:border-black after:transition-all after:block">
                                                 公共藝術
@@ -448,7 +447,7 @@
                     </div>
                     <div class="relative">
                         <div class=" group relative">
-                            <a href="" class="block relative  group">
+                            <a href="/qa" class="block relative  group">
                                 <div class="relative z-10">便民服務</div>
                                 <div
                                     class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
@@ -460,32 +459,32 @@
                             </div>
                             <div
                                 class="absolute top-full left-[20%] -translate-x-[20%] w-[200px] bg-white shadow-lg shadow-black/10 group-hover:opacity-100 opacity-0 pointer-events-none group-hover:pointer-events-auto">
-                                <a href="" class="block px-1 py-1">
+                                <a href="/qa" class="block px-1 py-1">
                                     <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">常見問題</p>
                                     </div>
                                 </a>
-                                <a href="" class="block px-1 py-1">
-                                    <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
+                                <a href="/Lost_found" class="block px-1 py-1">
+                                    <div class="hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">失物招領</p>
                                     </div>
                                 </a>
-                                <a href="" class="block px-1 py-1">
+                                <a href="/volunteer" class="block px-1 py-1">
                                     <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">志工制度</p>
                                     </div>
                                 </a>
-                                <a href="" class="block px-1 py-1">
+                                <a href="/internship" class="block px-1 py-1">
                                     <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">實習申請</p>
                                     </div>
                                 </a>
-                                <a href="" class="block px-1 py-1">
+                                <a href="/Application" class="block px-1 py-1">
                                     <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">場地租借</p>
                                     </div>
                                 </a>
-                                <a href="" class="block px-1 py-1">
+                                <a href="/venueRental" class="block px-1 py-1">
                                     <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                         <p class="px-4 py-1">攝影申請</p>
                                     </div>

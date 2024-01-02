@@ -3,7 +3,7 @@
     <main class="min-h-screen pb-10 lg:pb-60 overflow-x-hidden">
         <div>
             <!--banner-->
-            {{-- <section class="relative w-full">
+            <section class="relative w-full">
                 <div class="swiper bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -25,12 +25,12 @@
                             </div>
                         </div>
                     </div>
-                 
-            <div class="bannerswiper-pagination absolute bottom-11 left-14 z-30 text-center"></div>
-        </div>
-        </section> --}}
-        <!--openinfo-->
-        {{-- <section class="2xl:pt-24">
+
+                    <div class="bannerswiper-pagination absolute bottom-11 left-14 z-30 text-center"></div>
+                </div>
+            </section>
+            <!--openinfo-->
+            {{-- <section class="2xl:pt-24">
                 <div class="2xl:max-w-[1600px] mx-auto">
                     <div class="flex 2xl:space-x-12 2xl:w-1/2 h-[360px]">
                         <div class="2xl:w-1/2 h-full">
@@ -148,106 +148,115 @@
                 </div>
 
             </section> --}}
-        <!--service area-->
-        <section class="pt-5 md:pt-10 lg:pt-24 md:px-20 lg:px-0 ">
-            <div class="relative">
-                <!--768以下隱藏-->
-                <div class="md:hidden pt-5 px-10 space-y-4">
-                    <a href="/" class="block" title="展覽活動">
-                        <div class="relative">
-                            <img src="{{ asset('assets/images/homefeature01.jpg') }}" alt="展覽活動"
-                                class=" aspect-square w-full hfull object-cover">
-                            <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                <div class="p-2 flex flex-col justify-between text-center text-xl leading-8  font-bold">
-                                    <p class="">展覽</p>
-                                    <p class="">活動</p>
+            <!--service area-->
+            <section class="pt-5 md:pt-10 lg:pt-24 md:px-20 lg:px-0 ">
+                <div class="relative">
+                    <!--768以下隱藏-->
+                    <div class="md:hidden pt-5 px-10 space-y-4">
+                        <a href="/" class="block" title="展覽活動">
+                            <div class="relative">
+                                <img src="{{ asset('assets/images/homefeature01.jpg') }}" alt="展覽活動"
+                                    class=" aspect-square w-full hfull object-cover">
+                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                    <div
+                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8  font-bold">
+                                        <p class="">展覽</p>
+                                        <p class="">活動</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/" class="block" title="交通指南">
-                        <div class="relative">
-                            <img src="{{ asset('assets/images/homefeature02.jpg') }}" alt="交通指南"
-                                class=" aspect-square w-full hfull object-cover">
-                            <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                <div class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                    <p class="">交通</p>
-                                    <p class="">指南</p>
+                        </a>
+                        <a href="/" class="block" title="交通指南">
+                            <div class="relative">
+                                <img src="{{ asset('assets/images/homefeature02.jpg') }}" alt="交通指南"
+                                    class=" aspect-square w-full hfull object-cover">
+                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                    <div
+                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                        <p class="">交通</p>
+                                        <p class="">指南</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/" class="block" title="票價資訊">
-                        <div class="relative">
-                            <img src="{{ asset('assets/images/homefeature03.jpg') }}" alt="票價資訊"
-                                class=" aspect-square w-full hfull object-cover">
-                            <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                <div class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                    <p class="">票價</p>
-                                    <p class="">資訊</p>
+                        </a>
+                        <a href="/" class="block" title="票價資訊">
+                            <div class="relative">
+                                <img src="{{ asset('assets/images/homefeature03.jpg') }}" alt="票價資訊"
+                                    class=" aspect-square w-full hfull object-cover">
+                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                    <div
+                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                        <p class="">票價</p>
+                                        <p class="">資訊</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/" class="block" title="導覽服務">
-                        <div class="relative">
-                            <img src="{{ asset('assets/images/homefeature04.jpg') }}" alt="導覽服務"
-                                class=" aspect-square w-full hfull object-cover">
-                            <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
-                                <div class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
-                                    <p class="">導覽</p>
-                                    <p class="">服務</p>
+                        </a>
+                        <a href="/" class="block" title="導覽服務">
+                            <div class="relative">
+                                <img src="{{ asset('assets/images/homefeature04.jpg') }}" alt="導覽服務"
+                                    class=" aspect-square w-full hfull object-cover">
+                                <div class="w-[80px] h-[80px] absolute top-0 right-0 bg-[#ffea00]">
+                                    <div
+                                        class="p-2 flex flex-col justify-between text-center text-xl leading-8 font-bold">
+                                        <p class="">導覽</p>
+                                        <p class="">服務</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <!--728以上顯示-->
-                <!--將圖片分為兩個部分，並用寬設定比例才可以在rwd等比例縮放-->
-                <div class="hidden md:block px-5">
-                    <div class=" max-w-[1600px] mx-auto">
-                        <div class="flex space-x-5 xl:space-x-10">
-                            <a href="/" class="w-[45%] group block overflow-hidden opacityanimation opacity-0">
-                                <div class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
-                                    <img src="{{ asset('assets/images/homefeature01.jpg') }}" alt=""
-                                        class=" absolute top-0 left-0 w-full h-full object-cover">
-                                </div>
-                            </a>
-                            <div class=" w-[55%]">
-                                <div class="flex justify-between space-x-5 xl:space-x-10">
-                                    <div class="w-1/2 space-y-5 flex flex-col justify-between xl:space-y-10 ">
+                        </a>
+                    </div>
+                    <!--728以上顯示-->
+                    <!--將圖片分為兩個部分，並用寬設定比例才可以在rwd等比例縮放-->
+                    <div class="hidden md:block px-5">
+                        <div class=" max-w-[1600px] mx-auto">
+                            <div class="flex space-x-5 xl:space-x-10">
+                                <a href="/"
+                                    class="w-[45%] group block overflow-hidden opacityanimation opacity-0">
+                                    <div
+                                        class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
+                                        <img src="{{ asset('assets/images/homefeature01.jpg') }}" alt=""
+                                            class=" absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </a>
+                                <div class=" w-[55%]">
+                                    <div class="flex justify-between space-x-5 xl:space-x-10">
+                                        <div class="w-1/2 space-y-5 flex flex-col justify-between xl:space-y-10 ">
+                                            <a href="/"
+                                                class=" overflow-hidden group block opacityanimation opacity-0">
+                                                <div class="relative group-hover:scale-105 transition-all duration-500">
+                                                    <img src="{{ asset('assets/images/homefeature02.jpg') }}"
+                                                        alt=""
+                                                        class=" aspect-[420/320] w-full h-full object-cover">
+                                                </div>
+                                            </a>
+                                            <a href="/"
+                                                class=" overflow-hidden group block opacityanimation opacity-0">
+                                                <div class="relative group-hover:scale-105 transition-all duration-500">
+                                                    <img src="{{ asset('assets/images/homefeature03.jpg') }}"
+                                                        alt=""
+                                                        class=" aspect-[420/320] w-full h-full object-cover">
+                                                </div>
+                                            </a>
+                                        </div>
                                         <a href="/"
-                                            class=" overflow-hidden group block opacityanimation opacity-0">
-                                            <div class="relative group-hover:scale-105 transition-all duration-500">
-                                                <img src="{{ asset('assets/images/homefeature02.jpg') }}" alt=""
-                                                    class=" aspect-[420/320] w-full h-full object-cover">
-                                            </div>
-                                        </a>
-                                        <a href="/"
-                                            class=" overflow-hidden group block opacityanimation opacity-0">
-                                            <div class="relative group-hover:scale-105 transition-all duration-500">
-                                                <img src="{{ asset('assets/images/homefeature03.jpg') }}" alt=""
-                                                    class=" aspect-[420/320] w-full h-full object-cover">
+                                            class="w-1/2 group block overflow-hidden opacityanimation opacity-0">
+                                            <div
+                                                class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
+                                                <img src="{{ asset('assets/images/homefeature04.jpg') }}"
+                                                    alt=""
+                                                    class=" absolute top-0 left-0 w-full h-full object-cover">
                                             </div>
                                         </a>
                                     </div>
-                                    <a href="/"
-                                        class="w-1/2 group block overflow-hidden opacityanimation opacity-0">
-                                        <div
-                                            class="relative w-full h-full group-hover:scale-105 transition-all duration-500">
-                                            <img src="{{ asset('assets/images/homefeature04.jpg') }}" alt=""
-                                                class=" absolute top-0 left-0 w-full h-full object-cover">
-                                        </div>
-                                    </a>
                                 </div>
+
+
                             </div>
-
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
     </main>
     <x-front.footer />
     <script>
