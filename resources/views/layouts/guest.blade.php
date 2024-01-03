@@ -24,7 +24,6 @@
     <style>
         body {
             font-family: 'Noto Sans TC', sans-serif;
-            font-family: 'Noto Serif TC', serif;
         }
     </style>
     @livewireStyles

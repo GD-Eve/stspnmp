@@ -7,8 +7,8 @@
                 <div class="swiper bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="w-full h-[20%]">
-                                <img class="aspect-[16/9] w-full h-full object-cover "
+                            <div class="w-full h-[20%] relative">
+                                <img class="aspect-[16/9] w-full h-full object-cover"
                                     src="{{ asset('assets/images/banner01.jpg') }}" />
                             </div>
                         </div>

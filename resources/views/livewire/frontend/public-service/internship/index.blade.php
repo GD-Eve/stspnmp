@@ -1,7 +1,7 @@
 <div>
     <x-front.header />
-    <main class="relative min-h-screen overflow-hidden text-md lg:text-lg">
-        <div class="lg:flex">
+    <main class="relative min-h-screen overflow-hidden ">
+        <div class="lg:flex text-md lg:text-lg">
             <!--sidebar-->
             <section
                 class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
@@ -159,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <section class=" leading-9 lg:space-y-12">
+                    <section class=" leading-9 space-y-6 lg:space-y-12">
                         <div class="space-y-6 text-[#666]">
                             <p>本館為提供大專院校人類學、考古學、地質學、古生物學、生物學、博物館學、文物保存、藝術管理、圖書資訊、美術、藝術史、展示與教育、文化事業發展、休閒事業與餐飲服務等相關科系，或對博物館工作具有興趣的研究所或大專院校在學生博物館實習工作機會。
                             </p>
@@ -180,10 +180,10 @@
                                         <p>01.</p>
                                         <p>本館學生實習申請要點1071226修正</p>
                                     </div>
-                                    <div class="w-[45px]">
+                                    <a href="" class="w-[45px]">
                                         <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
                                             class="w-full h-full object-contain">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="py-4 border-b-2 border-dashed border-black w-full">
@@ -192,10 +192,10 @@
                                         <p>02.</p>
                                         <p>史前館實習工作說明表</p>
                                     </div>
-                                    <div class="w-[45px]">
+                                    <a href="" class="w-[45px]">
                                         <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
                                             class="w-full h-full object-contain">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="py-4 border-b-2 border-dashed border-black w-full">
@@ -204,10 +204,10 @@
                                         <p>03.</p>
                                         <p>附件一-本館實習申請表</p>
                                     </div>
-                                    <div class="w-[45px]">
+                                    <a href="" class="w-[45px]">
                                         <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
                                             class="w-full h-full object-contain">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="py-4 border-b-2 border-dashed border-black w-full">
@@ -216,10 +216,10 @@
                                         <p>04.</p>
                                         <p>附件二-本館實習履歷表</p>
                                     </div>
-                                    <div class="w-[45px]">
+                                    <a href="" class="w-[45px]">
                                         <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
                                             class="w-full h-full object-contain">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="py-4 border-b-2 border-dashed border-black w-full">
@@ -228,10 +228,10 @@
                                         <p>05.</p>
                                         <p>附件三-本館實習構想書</p>
                                     </div>
-                                    <div class="w-[45px]">
+                                    <a href="" class="w-[45px]">
                                         <img src="{{ asset('assets/images/convenience-icon.png') }}" alt=""
                                             class="w-full h-full object-contain">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
