@@ -36,6 +36,8 @@ Route::get('/Lost_found', App\Livewire\Frontend\PublicService\LostFound\Index::c
 Route::get('/volunteer', App\Livewire\Frontend\PublicService\Volunteer\Index::class)->name('volunteer');
 Route::get('/internship', App\Livewire\Frontend\PublicService\Internship\Index::class)->name('internship');
 Route::get('/Application', App\Livewire\Frontend\PublicService\Application\Index::class)->name('Application');
+Route::get('/venueRental', App\Livewire\Frontend\PublicService\VenueRental\Index::class)->name('venueRental');
+Route::get('/news', App\Livewire\Frontend\News\Index::class)->name('news');
 
 
 

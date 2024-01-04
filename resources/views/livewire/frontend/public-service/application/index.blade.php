@@ -150,7 +150,7 @@
                 </div>
             </section>
             <!--content-->
-            <div class=" px-5 md:px-20 xl:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
+            <div class=" px-5 md:px-20 xl:px-60 pb-10 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
                 <div class="pt-5 md:pt-10 lg:pt-11 text-[#666] leading-9 tracking-widest">
                     <div class="inline-block group relative">
                         <div class="text-2xl md:text-4xl font-bold relative z-10">場地租借</div>
@@ -159,15 +159,15 @@
                     </div>
                     <section class="pt-12 pb-4 border-b border-[#666]">
                         <div class=" space-y-6 lg:space-y-12 text-[#666]">
-                            <div class="lg:space-y-12">
+                            <div class=" space-y-6 lg:space-y-12">
                                 <div class=" space-y-2">
                                     <p class="text-2xl font-bold">國際會議廳</p>
-                                    <ul class="px-10 list-disc">
+                                    <ul class=" pl-5 lg:pl-10 list-disc">
                                         <li>可容納150人</li>
                                         <li>同步翻譯系統</li>
                                         <li>
                                             <p>分三時段租借</p>
-                                            <div class="w-full lg:w-1/4 border-[0.5px] border-[#666]">
+                                            <div class="w-full 2xl:w-1/4 border-[0.5px] border-[#666]">
                                                 <div class=" flex text-center ">
                                                     <p class="border-[0.5px] border-[#666] w-1/2">時段</p>
                                                     <p class="border-[0.5px] border-[#666] w-1/2">租金</p>
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class=" space-y-2">
                                     <p class="text-2xl font-bold">申請方式</p>
-                                    <ul class="px-10 list-disc">
+                                    <ul class="pl-5 lg:pl-10 list-disc">
                                         <li>電話預約：預約前請詳閱下方場地使用管理要點。</li>
                                         <li>網路申辦：進入場地租借系統，填寫申請資料，請由此進入「場地租借系統」頁面。</li>
                                         <li>
@@ -203,26 +203,24 @@
                                 </div>
                                 <div class=" space-y-2">
                                     <p class="text-2xl font-bold">繳費方式</p>
-                                    <ul class="px-10 list-disc">
+                                    <ul class="pl-5 lg:pl-10 list-disc">
                                         <li>現金繳費
                                         </li>
                                         <li>
                                             <p> 銀行匯款：匯款證明請傳真(089)382748。</p>
-                                            <ul class="px-10 list-decimal">
+                                            <ul class="pl-5 lg:pl-10 list-decimal">
                                                 <li>解款行：中央銀行國庫局〔代號：0000022〕</li>
                                                 <li>收款人帳號：05617003068001</li>
                                                 <li>收款人戶名：國立臺灣史前文化博物館場地設施使用費戶</li>
                                                 <li>匯款種類：公庫匯款</li>
                                                 <li>本帳號只接受臨櫃匯款，無法使用 ATM 櫃員機或線上 ATM。匯款手續費由使用單位自行吸收。</li>
                                             </ul>
-
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div class=" space-y-2">
                                     <p class="text-2xl font-bold">洽詢專線</p>
-                                    <ul class="px-10 list-disc">
+                                    <ul class="pl-5 lg:pl-10 list-disc">
                                         <li>電話：（06）5050905#8528(沈先生)</li>
                                         <li>傳真：（06）5050906</li>
                                     </ul>
@@ -234,7 +232,7 @@
                     <section class="py-4 border-b border-[#666]">
                         <div class=" space-y-3">
                             <p class="text-2xl font-bold text-center">國立臺灣史前文化博物館場地使用管理要點</p>
-                            <ul class="list-decimal pl-10 leading-10 tracking-widest">
+                            <ul class="list-decimal pl-5 lg:pl-10 leading-10 tracking-widest">
                                 <li>
                                     國立臺灣史前文化博物館（以下簡稱本館）為推廣社會文化活動及響應社會公益活動；有效利用本館空間，依本館規費收費標準訂定本館場地使用管理要點。
                                 </li>
@@ -255,7 +253,7 @@
                                     <p>
                                         申請使用本館場地，有下列情形之一者，不予核准；已核准者，得撤銷或廢止核准並停止其使用：
                                     </p>
-                                    <ul class="list-disc pl-10">
+                                    <ul class="list-disc pl-5 lg:pl-10">
                                         <li>活動內容有違反法令，或有妨害公共秩序或善良風俗之虞。</li>
                                         <li>活動內容有非法販售之其他商業行為。</li>
                                         <li>活動內容有損害本館場地或相關設施、設備之虞。</li>
@@ -294,13 +292,13 @@
                             <p>
                                 國立臺灣史前文化博物館（以下簡稱本館）重視並保護您的個人資料。當您在為線上申辦系統使用時，系統會需要向您蒐集必要的個人識別資料，包括：姓名、電子郵件信箱、聯絡地址、聯絡電話、身分證字號等資料，以便為您提供預約導覽、場地租借等服務。在您提供個人資料之前，請詳閱下列告知事項，以維護您的權益。
                             </p>
-                            <ul class="list-decimal pl-10 leading-10 tracking-widest">
+                            <ul class="list-decimal pl-5 lg:pl-10 leading-10 tracking-widest">
                                 <li>
                                     本館線上申辦系統依個人資料保護法等相關法令規定，在主管機關所核准之特定目的範圍內蒐集您的個人資料
                                 </li>
                                 <li>
                                     <p>個資之類別：</p>
-                                    <ul class="list-disc pl-10">
+                                    <ul class="list-disc pl-5 lg:pl-10">
                                         <li>
                                             C001識別個人者：姓名、電子郵件信箱、聯絡地址、聯絡電話等資料。
                                         </li>
@@ -332,7 +330,7 @@
                     </section>
                     <!--附件下載-->
                     <section>
-                        <div class="pb-10 lg:pb-60 font-bold text-black">
+                        <div class=" font-bold text-black">
                             <div class="py-4 border-b-4 border-black w-full">
                                 <div class="flex items-center space-x-4">
                                     <div class="w-4 h-4 bg-[#ffea00] rotate-12"></div>
