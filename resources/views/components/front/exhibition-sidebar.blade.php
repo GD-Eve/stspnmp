@@ -13,8 +13,8 @@
             'pages' => [['route' => '/device', 'name' => '裝置藝術'], ['route' => '/divice', 'name' => '公共藝術']],
         ],
     ];
-
-    // dd(\Illuminate\Support\Facades\Route::currentRouteName());
+    front.fare
+    dd(\Illuminate\Support\Facades\Route::currentRouteName());
 @endphp
 
 
