@@ -1,10 +1,10 @@
 <div>
     <x-front.header />
     <main class=" min-h-screen overflow-hidden">
-        <div class="pt-5 md:pt-10 lg:pt-11 pb-10 lg:pb-60 space-y-5 lg:space-y-10">
+        <div class="pt-5 md:pt-10 px-5 lg:px-0 pb-10 lg:pb-60 space-y-5 lg:space-y-10">
             <div class="flex justify-center items-center rightanimation translate-x-20">
                 <div class="inline-block group relative">
-                    <div class="text-2xl md:text-4xl font-black">導覽服務</div>
+                    <div class="text-2xl md:text-4xl font-black relative z-10">導覽服務</div>
                     <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                     </div>
                 </div>
@@ -14,13 +14,13 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.912530281249!2d120.2815778153549!3d23.100297619214487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7bf1980e9f51%3A0x78b16e6bbdc1e155!2z5ZyL56uL6Ie654Gj5Y-y5YmN5paH5YyW5Y2a54mp6aSo77yN5Y2X56eR6ICD5Y-k6aSo!5e0!3m2!1szh-TW!2stw!4v1587540619912!5m2!1szh-TW!2stw"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-                    title="地址：台南市新市區南科三路10號" class="h-[70vh] w-[100%]"></iframe>
+                    title="地址：台南市新市區南科三路10號" class="h-[40vh] lg:h-[70vh] w-[100%]"></iframe>
             </div>
             <!--districtplan-->
-            <div class="pt-5 md:pt-10 lg:pt-11 px-5 md:px-8 lg:px-0 space-y-5 lg:space-y-20">
+            <div class="pt-5 md:pt-10 lg:pt-11 md:px-8  space-y-5 lg:space-y-20">
                 <!--管區平面圖-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-2 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl  font-bold  ">館區平面圖(引導用)</p>
                         </div>
@@ -40,7 +40,7 @@
                 </div>
                 <!--大客車(平面停車場)-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-4 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl text-left font-bold ">【大客車(平面停車場)】</p>
                         </div>
@@ -116,7 +116,7 @@
                 </div>
                 <!--汽機車(地下停車場)-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-4 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl text-left font-bold ">【汽、機車指引(請停行政服務區地下停車場)】</p>
                         </div>
@@ -194,7 +194,7 @@
                 </div>
                 <!--高鐵-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-4 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl text-left font-bold ">高鐵</p>
                         </div>
@@ -207,7 +207,7 @@
                 </div>
                 <!--公車-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-4 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl text-left font-bold ">公車</p>
                         </div>
@@ -262,7 +262,7 @@
                 </div>
                 <!--火車-->
                 <div class="flex flex-col justify-center items-center">
-                    <div class="w-full h-full lg:w-[1200px] ">
+                    <div class="w-full h-full 2xl:w-[1200px] ">
                         <div class="p-4 h-[5%]  border border-black/10 ">
                             <p class="text-xl lg:text-2xl text-left font-bold ">火車</p>
                         </div>
@@ -286,8 +286,8 @@
                                             </div>
                                         </div>
                                     </a>
-                                    
-                                    
+
+
                                 </div>
 
                             </div>
@@ -300,32 +300,31 @@
     </main>
     <x-front.footer />
 </div>
-    <script>
-        document.addEventListener('livewire:init', () => {
-                    let opacitytAnimation = gsap.utils.toArray('.opacityanimation');
-                    let rightAnimation = gsap.utils.toArray('.rightanimation');
-                    gsap.registerPlugin(ScrollTrigger) 
-                    ScrollTrigger.batch(opacitytAnimation, {
-                        onEnter: batch => gsap.to(batch, {
-                            opacity: 1, 
-                            stagger: 0.7,
-                            duration:1,
-                            y:0
-                        }),
-                        markers:true,
-                        start:"top 90%",
-                    });
-                   
-                    ScrollTrigger.batch(rightAnimation, {
-                        onEnter: batch => gsap.to(batch, {
-                            opacity: 1, 
-                            stagger: 0.5,
-                            duration:0.7,
-                            x:0,
-                        }),
-                        markers:true,
-                        start:"top 90%",
-                    });
-                })
-            
-    </script>
+<script>
+    document.addEventListener('livewire:init', () => {
+        let opacitytAnimation = gsap.utils.toArray('.opacityanimation');
+        let rightAnimation = gsap.utils.toArray('.rightanimation');
+        gsap.registerPlugin(ScrollTrigger)
+        ScrollTrigger.batch(opacitytAnimation, {
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                stagger: 0.7,
+                duration: 1,
+                y: 0
+            }),
+            //markers: true,
+            start: "top 90%",
+        });
+
+        ScrollTrigger.batch(rightAnimation, {
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                stagger: 0.5,
+                duration: 0.7,
+                x: 0,
+            }),
+            //markers: true,
+            start: "top 90%",
+        });
+    })
+</script>

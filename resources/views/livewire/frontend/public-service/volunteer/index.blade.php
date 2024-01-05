@@ -152,15 +152,17 @@
             <!--content-->
             <div class="px-5 md:px-20 xl:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
                 <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-10">
-                    <div class="pb-7">
+                    <div class="pb-7 flex justify-between">
                         <div class="inline-block group relative">
                             <div class="text-2xl md:text-4xl font-bold text-black relative z-10">志工制度</div>
                             <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
+                        <!--lg以下icon-->
+                        <x-front.icon />
                     </div>
                     <section>
-                        <div class="lg:flex lg:space-x-2 lg:items-center border-b border-black/10">
+                        <div class="flex space-x-2 items-center border-b border-black/10">
                             <a href="/" class="block relative group">
                                 <p class="p-2">管理要點</p>
                                 <div
@@ -230,6 +232,8 @@
             </div>
 
         </div>
+        <!--lg以上icon-->
+        <x-front.lg-icon />
     </main>
     <x-front.footer />
     <script>

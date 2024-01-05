@@ -3,6 +3,7 @@
     <main class="relative min-h-screen overflow-hidden text-md lg:text-lg">
         <div class="lg:flex">
             <!--sidebar-->
+            
             <div
                 class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
                 <div>

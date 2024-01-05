@@ -154,12 +154,12 @@
                 <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-10">
                     <div class="pb-7">
                         <div class="inline-block group relative">
-                            <div class="text-2xl md:text-4xl font-bold">失物招領</div>
+                            <div class="text-2xl md:text-4xl font-bold relative z-10">失物招領</div>
                             <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
                     </div>
-                    <section class=" pt-10 lg:pt-20 text-base tracking-widest leading-[36px] font-bold w-full">
+                    <section class=" text-base tracking-widest leading-[36px] font-bold w-full">
                         <table class="table-auto lg:table-fixed w-full text-left">
                             <thead>
                                 <tr class=" py-1 border-t-8 border-b-8 border-black">
@@ -170,7 +170,7 @@
 
                                 </tr>
                             </thead>
-                            <tbody >
+                            <tbody>
                                 <tr class=" lg:py-5 border-b-2 border-dashed border-black">
                                     <td>範例-藍色雨傘</td>
                                     <td>門口</td>

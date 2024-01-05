@@ -38,6 +38,7 @@ Route::get('/internship', App\Livewire\Frontend\PublicService\Internship\Index::
 Route::get('/Application', App\Livewire\Frontend\PublicService\Application\Index::class)->name('Application');
 Route::get('/venueRental', App\Livewire\Frontend\PublicService\VenueRental\Index::class)->name('venueRental');
 Route::get('/news', App\Livewire\Frontend\News\Index::class)->name('news');
+Route::get('/surrounding', App\Livewire\Frontend\Surrounding\Index::class)->name('surrounding');
 
 
 

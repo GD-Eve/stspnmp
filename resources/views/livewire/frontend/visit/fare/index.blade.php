@@ -8,7 +8,7 @@
             <div class="lg:flex-1 px-5 md:px-15 lg:px-48  rightanimation translate-x-60">
                 <div class=" pt-5 md:pt-10 lg:pt-11  ">
                     <div class="text-[#333] text-base md:text-lg leading-7 md:leading-8">
-                        <div class="relative flex justify-between ">
+                        <div class="flex justify-between">
                             <div class="lg:pb-7">
                                 <div class="inline-block group relative">
                                     <div class="text-2xl md:text-4xl font-black">票價資訊</div>
@@ -17,19 +17,7 @@
                                 </div>
                             </div>
                             <!--lg以下icon-->
-                            <div class="flex space-x-7 md:space-x-10  justify-between items-center lg:hidden">
-                                <div class="w-[31%]  md:max-w-[43px] h-fit">
-                                    <img src="https://stsp.nmp.gov.tw/img/front/about-icon-1.png" alt=""
-                                        class=" aspect-square w-full h-full object-contain">
-                                </div>
-                                <div
-                                    class="w-[31%] h-full md:w-[43px] md:h-[43px] flex justify-center rounded-full  bg-black/20">
-                                    <div class="max-w-[25px] ">
-                                        <img src="https://stsp.nmp.gov.tw/img/front/about-icon-3.png" alt=""
-                                            class=" aspect-square w-full h-full object-contain">
-                                    </div>
-                                </div>
-                            </div>
+                            <x-front.icon />
                         </div>
                         <!--text-->
                         <div class="pb-10 lg:pb-60 pt-5 md:pt-10 lg:pt-0  tracking-widest text-base text-[#666] ">
@@ -122,7 +110,7 @@
                                         </li>
                                         <li>
                                             <p class=" leading-8">
-                                                　週三我的教室在博物館：每週三學校教師及學生憑相關證件，即可免費參觀。[活動時間：111/07/01~113/06/30]</p>
+                                                週三我的教室在博物館：每週三學校教師及學生憑相關證件，即可免費參觀。[活動時間：111/07/01~113/06/30]</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -164,7 +152,7 @@
                                     <p class="font-bold">【備註】</p>
 
                                     <p class=" leading-8">
-                                        　優待或免費參觀者請憑證或出示載有年齡、身分或其他公務機關核發之相關證明文件，未攜帶者一律依全票計。
+                                        優待或免費參觀者請憑證或出示載有年齡、身分或其他公務機關核發之相關證明文件，未攜帶者一律依全票計。
                                     </p>
                                     <div class="md:flex">
                                         <p>退票相關資訊如連結：</p>
@@ -182,20 +170,7 @@
                 </div>
             </div>
             <!--lg以上icon-->
-            <div class="hidden lg:block  opacityanimation opacity-0 ">
-                <a href="/" title="Facebook">
-                    <div class="absolute top-11  right-5 xl:right-28 w-[3%] max-w-[43px] h-fit">
-                        <img src="https://stsp.nmp.gov.tw/img/front/about-icon-1.png" alt=""
-                            class=" aspect-square w-full h-full overflow-hidden ">
-                    </div>
-                </a>
-                <a href="/" title="print">
-                    <div class="absolute top-28 right-5 xl:right-28 w-[3%] max-w-[43px] h-fit">
-                        <img src="https://stsp.nmp.gov.tw/img/front/about-icon-3.png" alt=""
-                            class=" aspect-square w-full h-full overflow-hidden">
-                    </div>
-                </a>
-            </div>
+            <x-front.lg-icon />
 
         </div>
     </main>
@@ -205,42 +180,41 @@
 </div>
 <script>
     document.addEventListener('livewire:init', () => {
-                let opacitytAnimation = gsap.utils.toArray('.opacityanimation');
-                let leftAnimation = gsap.utils.toArray('.leftanimation');
-                let rightAnimation = gsap.utils.toArray('.rightanimation');
-                gsap.registerPlugin(ScrollTrigger) 
-                ScrollTrigger.batch(opacitytAnimation, {
-                    onEnter: batch => gsap.to(batch, {
-                        opacity: 1, 
-                        stagger: 0.7,
-                        duration:1,
-                    
-                    }),
-                    markers:true,
-                    start:"top 90%",
-                });
-                ScrollTrigger.batch(leftAnimation, {
-                    onEnter: batch => gsap.to(batch, {
-                        opacity: 1, 
-                        stagger: 0.5,
-                        duration:0.7,
-                        x:0,
-                        y:0
-                    }),
-                    markers:true,
-                    start:"top 90%",
-                });
-                ScrollTrigger.batch(rightAnimation, {
-                    onEnter: batch => gsap.to(batch, {
-                        opacity: 1, 
-                        stagger: 0.5,
-                        duration:0.7,
-                        x:0,
-                        y:0
-                    }),
-                    markers:true,
-                    start:"top 90%",
-                });
-            })
-        
+        let opacitytAnimation = gsap.utils.toArray('.opacityanimation');
+        let leftAnimation = gsap.utils.toArray('.leftanimation');
+        let rightAnimation = gsap.utils.toArray('.rightanimation');
+        gsap.registerPlugin(ScrollTrigger)
+        ScrollTrigger.batch(opacitytAnimation, {
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                stagger: 0.7,
+                duration: 1,
+
+            }),
+            //markers: true,
+            start: "top 90%",
+        });
+        ScrollTrigger.batch(leftAnimation, {
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                stagger: 0.5,
+                duration: 0.7,
+                x: 0,
+                y: 0
+            }),
+            //markers: true,
+            start: "top 90%",
+        });
+        ScrollTrigger.batch(rightAnimation, {
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1,
+                stagger: 0.5,
+                duration: 0.7,
+                x: 0,
+                y: 0
+            }),
+            //markers: true,
+            start: "top 90%",
+        });
+    })
 </script>

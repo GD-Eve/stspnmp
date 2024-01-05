@@ -150,16 +150,16 @@
                 </div>
             </section>
             <!--content-->
-            <div class="px-5 md:px-20 xl:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
+            <div class="px-5 md:px-20 xl:px-60 pb-10 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
                 <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-10">
                     <div class="pb-7">
                         <div class="inline-block group relative">
-                            <div class="text-2xl md:text-4xl font-bold">常見問題</div>
+                            <div class="text-2xl md:text-4xl font-bold relative z-10">常見問題</div>
                             <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
                     </div>
-                    <section class="lg:pl-10 pt-10 lg:pt-20 text-base tracking-widest leading-[36px] font-bold">
+                    <section class="lg:pl-10 pt-5 lg:pt-20 text-base tracking-widest leading-[36px] font-bold">
                         <div class="space-y-20 lg:space-y-32">
                             <!--營運時間-->
                             <div class="space-y-7">
@@ -643,22 +643,6 @@
                     </section>
                 </div>
             </div>
-
-            <!--lg以上icon-->
-            <section class="hidden lg:block opacityanimation opacity-0 ">
-                <a href="/" title="Facebook">
-                    <div class="absolute top-11  right-5 xl:right-28 w-[3%] max-w-[43px] h-fit">
-                        <img src="https://stsp.nmp.gov.tw/img/front/about-icon-1.png" alt=""
-                            class=" aspect-square w-full h-full overflow-hidden ">
-                    </div>
-                </a>
-                <a href="/" title="print">
-                    <div class="absolute top-28 right-5 xl:right-28 w-[3%] max-w-[43px] h-fit">
-                        <img src="https://stsp.nmp.gov.tw/img/front/about-icon-3.png" alt=""
-                            class=" aspect-square w-full h-full overflow-hidden">
-                    </div>
-                </a>
-            </section>
         </div>
     </main>
     <x-front.footer />

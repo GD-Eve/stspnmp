@@ -7,7 +7,7 @@
                 class="hidden lg:block  lg:w-[25%] xl:w-[15%] bg-[#f3f3f3] relative leftanimation opacity-0 -translate-x-28">
                 <div>
                     <a href="/" title="簡介" class="block relative">
-                        <div class=" pt-11 px-8">
+                        <div class=" pt-11 px-8 ">
                             <div class="flex items-center space-x-2 relative z-30">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 -960 960 960"
                                     width="12">
@@ -15,6 +15,7 @@
                                 </svg>
                                 <p class="py-4  text-lg ">簡介</p>
                             </div>
+                           
                         </div>
                         <div class="absolute  bottom-0 left-0 border-black border-b-4 w-[95%] z-10"></div>
                         <div class=" absolute top-10 left-0 bg-[#ffea00] w-[92%] h-[75%] "></div>
@@ -152,10 +153,14 @@
             <!--content-->
             <div class=" px-5 md:px-20 xl:px-60 pb-10 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
                 <div class="pt-5 md:pt-10 lg:pt-11 text-[#666] leading-9 tracking-widest">
-                    <div class="inline-block group relative">
-                        <div class="text-2xl md:text-4xl font-bold relative z-10">場地租借</div>
-                        <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
+                    <div class="flex justify-between">
+                        <div class="inline-block group relative">
+                            <div class="text-2xl md:text-4xl font-bold relative z-10">場地租借</div>
+                            <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
+                            </div>
                         </div>
+                        <!--lg以下icon-->
+                        <x-front.icon />
                     </div>
                     <section class="pt-12 pb-4 border-b border-[#666]">
                         <div class=" space-y-6 lg:space-y-12 text-[#666]">
@@ -366,6 +371,8 @@
                     </section>
                 </div>
             </div>
+            <!--lg以上icon-->
+            <x-front.lg-icon />
         </div>
     </main>
     <x-front.footer />

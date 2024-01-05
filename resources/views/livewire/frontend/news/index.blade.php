@@ -1,15 +1,15 @@
 <div>
     <x-front.header />
     <main class="min-h-screen">
-        <div class="w-full xl:max-w-[1200px] mx-auto py-12 px-5 md:px-10 pb-10">
+        <div class="w-full xl:max-w-[1200px] mx-auto py-12 px-5 lg:px-10 pb-10">
             <div>
                 <div class="inline-block relative">
                     <p class="text-2xl md:text-4xl font-bold relative z-10">最新消息</p>
                     <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]"></div>
                 </div>
                 <div class="pt-10 lg:pt-20 tracking-widest text-base">
-                    <div class=" space-y-10 xl:space-y-0 lg:flex lg:justify-between lg:items-center ">
-                        <div class="flex items-center w-full">
+                    <div class=" space-y-10 xl:space-y-0 w-full xl:flex xl:justify-between xl:items-center text-center">
+                        <section class="flex items-center ">
                             <p>日期：</p>
                             <div
                                 class="flex justify-center items-center border-solid border-b border-black space-x-1 lg:space-x-5">
@@ -45,18 +45,18 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                        </div>
-                        <div class="flex relative w-full" x-data="{ open: false }">
-                            <p>分類：</p>
-                            <div class="relative " @click="open = ! open">
-                                <div class="flex space-x-20">
+                        </section>
+                        <section class="flex" x-data="{ open: false }">
+                            <p class="w-[20%] sm:w-[10%] md:w-fit">分類：</p>
+                            <div class="relative flex flex-1" @click="open = ! open">
+                                <div class="flex justify-between border-b border-black lg:space-x-10 w-full">
                                     <p>全部</p>
                                     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                                         width="24">
                                         <path d="M480-360 280-560h400L480-360Z" />
                                     </svg>
                                 </div>
-                                <div class=" absolute  top-full left-0 w-full z-20 bg-white border border-black/10 rounded-md  shadow-xl"
+                                <div class=" absolute top-full left-0 w-full z-20 bg-white border border-black/10 rounded-md shadow-xl text-left"
                                     x-show="open">
                                     <div class=" font-bold hover:bg-sky-500 hover:text-white">全部</div>
                                     <div class=" font-bold hover:bg-sky-500 hover:text-white">活動</div>
@@ -66,20 +66,21 @@
                                     <div class=" font-bold hover:bg-sky-500 hover:text-white">公告</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="flex items-center w-full">
-                            <p>關鍵字：</p>
-                            <input type="text" name="" id=""
-                                class="outline-none focus:outline-none border-none focus:border-none"
-                                placeholder="請輸入關鍵字">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                                width="24">
-                                <path d="M480-360 280-560h400L480-360Z" />
-                            </svg>
-                        </div>
+                        </section>
+                        <section class="flex items-center">
+                            <p class="w-[22%] sm:w-[12%] md:w-fit">關鍵字：</p>
+                            <div class="flex flex-1 justify-between border-b border-black w-full">
+                                <input type="text" name="" id=""
+                                    class="outline-none focus:outline-none border-none focus:border-none"
+                                    placeholder="請輸入關鍵字">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
+                                    width="24">
+                                    <path d="M480-360 280-560h400L480-360Z" />
+                                </svg>
+                            </div>
+                        </section>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>

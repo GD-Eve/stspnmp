@@ -1,6 +1,6 @@
 <div>
     <x-front.header />
-    <main class="relative min-h-screen overflow-hidden ">
+    <main class="relative min-h-screen overflow-hidden pb-10">
         <div class="lg:flex text-md lg:text-lg">
             <!--sidebar-->
             <section
@@ -152,12 +152,14 @@
             <!--content-->
             <div class="px-5 md:px-20 xl:px-60 lg:pb-60 min-h-screen rightanimation opacity-0 translate-x-28 w-full">
                 <div class="pt-5 md:pt-10 lg:pt-11 lg:space-y-12">
-                    <div class="pb-7">
+                    <div class="pb-7 relative flex justify-between">
                         <div class="inline-block group relative">
                             <div class="text-2xl md:text-4xl font-bold relative z-10">實習申請</div>
                             <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
                             </div>
                         </div>
+                        <!--lg以下icon-->
+                        <x-front.icon />
                     </div>
                     <section class=" leading-9 space-y-6 lg:space-y-12">
                         <div class="space-y-6 text-[#666]">
@@ -239,7 +241,8 @@
                     </section>
                 </div>
             </div>
-
+            <!--lg以上icon-->
+            <x-front.lg-icon />
         </div>
     </main>
     <x-front.footer />

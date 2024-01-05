@@ -152,10 +152,14 @@
             <!--content-->
             <div class=" px-5 md:px-20 xl:px-60 pb-10 min-h-screen rightanimation opacity-0 translate-x-28 text-[#666]">
                 <div class="pt-5 md:pt-10 lg:pt-11 leading-10 tracking-widest">
-                    <div class="inline-block relative">
-                        <div class="text-2xl md:text-4xl font-bold relative z-10">展廳攝影申請</div>
-                        <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
+                    <div class="flex justify-between">
+                        <div class="inline-block relative">
+                            <div class="text-2xl md:text-4xl font-bold relative z-10">展廳攝影申請</div>
+                            <div class="absolute w-full h-1 bg-[#ffea00] bottom-0 left-0 -translate-y-[3px]">
+                            </div>
                         </div>
+                        <!--lg以下icon-->
+                        <x-front.icon />
                     </div>
                     <section class="pt-12 space-y-5">
                         <div>
@@ -252,6 +256,8 @@
                     </section>
                 </div>
             </div>
+            <!--lg以上icon-->
+            <x-front.lg-icon />
         </div>
     </main>
     <x-front.footer />

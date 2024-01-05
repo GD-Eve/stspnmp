@@ -153,7 +153,7 @@
                                         </div>
                                     </a>
                                     <div class="px-5 space-y-4">
-                                        <a href="" class="block text-black/80" title="常設展">常設展</a>
+                                        <a href="/permanent" class="block text-black/80" title="常設展">常設展</a>
                                         <div class="px-5 space-y-4 text-base text-black/60">
                                             <a href="" class="block" title="第一展廳">第一展廳</a>
                                             <a href="" class="block" title="第二展廳">第二展廳</a>
@@ -229,7 +229,7 @@
                                     </a>
                                 </div>
                                 <div class="px-6 py-4 space-y-4 text-lg font-black text-black">
-                                    <a href="" class="inline-block relative group" title="網站地圖">
+                                    <a href="/sitemap" class="inline-block relative group" title="網站地圖">
                                         <div>
                                             <div class="relative text-lg">網站地圖</div>
                                             <div
@@ -292,7 +292,8 @@
                                             <p class="px-4 py-1">導覽服務</p>
                                         </div>
                                     </a>
-                                    <a href="/" class="block px-1 py-1">
+                                    <a href="https://event.culture.tw/NMP/portal/Tour/J5401MAction?changePage=0&TourType=004"
+                                        class="block px-1 py-1">
                                         <div class="  hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <p class="px-4 py-1">兒童廳預約</p>
                                         </div>
@@ -336,7 +337,7 @@
                                         <div
                                             class="flex justify-between hover:bg-yellow-300 hover:transition-all hover:duration-500">
                                             <div class="block ">
-                                                <a href="" class="  ">
+                                                <a href="/permanent" class="  ">
                                                     <p class="px-4 py-1">常設展</p>
                                                 </a>
                                             </div>
@@ -348,7 +349,7 @@
                                         </div>
                                     </div>
                                     <div class="menulistshow h-0 overflow-hidden bg-white">
-                                        <a href="" class="block px-1 py-1">
+                                        <a href="/permanent" class="block px-1 py-1">
                                             <p
                                                 class="inline-block px-4 py-1 after:border-b after:w-0 after:hover:w-full after:hover:border-black after:transition-all after:block">
                                                 第一展廳
@@ -493,13 +494,13 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="block relative  group">
+                    <a href="/news" class="block relative  group">
                         <div class="relative z-10">最新消息</div>
                         <div
                             class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
                         </div>
                     </a>
-                    <a href="" class="block relative  group">
+                    <a href="/surrounding" class="block relative  group">
                         <div class="relative z-10">線上展覽</div>
                         <div
                             class="absolute w-0 h-1 bg-yellow-300 bottom-0 left-0  -translate-y-[110%] group-hover:w-full group-hover:transition-all">
